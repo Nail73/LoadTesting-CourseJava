@@ -51,8 +51,7 @@ public class ServletPut extends HttpServlet {
 
             pw.print(gson.toJson(model.getFromList()));
         } else {
-            pw.print(gson.fromJson("{\nТакого пользователя нет\n}", JsonObject.class));
-
+            pw.print(gson.fromJson("{\n\"Такого пользователя\" : \"нет\"\n}", JsonObject.class));
             pw.print(gson.toJson(model.getFromList()));
         }
     }

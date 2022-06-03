@@ -40,11 +40,11 @@ public class ServletDelete extends HttpServlet {
         boolean isValidId = model.getFromList().containsKey(id);
 
         if (model.getFromList().isEmpty()) {
-            pw.print(gson.fromJson("{\nМодель: пустая\n}", JsonObject.class));
+            pw.print(gson.fromJson("{\n\"Модель\" : \"пуста\"\n}", JsonObject.class));
         } else if (!isValidId) {
-            pw.print(gson.fromJson("{\nВы ввели id, которого еще нет: " + id + "\n}", JsonObject.class));
+            pw.print(gson.fromJson("{\n\"Вы ввели id, которого нет\" : \"" + id + "\"\n}", JsonObject.class));
         } else {
-            pw.print(gson.fromJson("{\nПользователь с ID: " + id + " успешно удален\n}", JsonObject.class));
+            pw.print(gson.fromJson("{\n\"Пользователь с ID\" : \"" + id + " успешно удален\"\n}", JsonObject.class));
             model.getFromList().remove(id);
         }
     }

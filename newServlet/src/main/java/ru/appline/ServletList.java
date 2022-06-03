@@ -31,12 +31,12 @@ public class ServletList extends HttpServlet {
             pw.print(gson.toJson(model.getFromList()));
         } else if (id > 0) {
             if (id > model.getFromList().size()) {
-                pw.print(gson.fromJson("{\nТакого пользователя нет\n}", JsonObject.class));
+                pw.print(gson.fromJson("{\n\"Такого пользователя\" : \"нет\"\n}", JsonObject.class));
             } else {
                 pw.print(gson.toJson(model.getFromList().get(id)));
             }
         } else {
-            pw.print(gson.fromJson("{\nID должен быть больше нуля\n}", JsonObject.class));
+            pw.print(gson.fromJson("{\n\"ID должен быть больше\" : \"нуля\"\n}", JsonObject.class));
         }
     }
 }
