@@ -6,7 +6,7 @@ public class Pet {
     private String type;
     private int age;
 
-    public Pet(){
+    public Pet() {
         super();
     }
 
