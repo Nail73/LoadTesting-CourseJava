@@ -2,7 +2,9 @@ package ru.appline.calculator;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -14,33 +16,44 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/Calculator")
 public class Calculator extends HttpServlet {
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
-    private static final long serialVersionUID = 7223778025721767631L;
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        response.setContentType("application/json; charset=utf-8");
-        request.setCharacterEncoding("utf-8");
-        PrintWriter out = response.getWriter();
-        double firstNum = Double.valueOf(request.getParameter("firstNum"));
-        double secondNum = Double.valueOf(request.getParameter("secondNum"));
-        String operator = request.getParameter("operator");
-        double result = 0;
-        if ("+".equals(operator)) {
-            result = firstNum + secondNum;
-        } else if ("-".equals(operator)) {
-            result = firstNum - secondNum;
-        } else if ("*".equals(operator)) {
-            result = firstNum * secondNum;
-        } else if ("/".equals(operator)) {
-            result = firstNum / secondNum;
+        StringBuffer sb = new StringBuffer();
+        String line;
+
+        try {
+            BufferedReader reader = request.getReader();
+            while ((line = reader.readLine()) != null) {
+                sb.append(line);
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
         }
 
-        String json = gson.toJson(firstNum + " " + operator + " " + secondNum + " = " + result);
-        out.print(json);
-        out.print("<br> <a href='index.jsp'> Возврат </a>");
-        out.flush();
-        out.close();
+        JsonObject jsonObject = gson.fromJson(String.valueOf(sb), JsonObject.class);
+        String operator = jsonObject.get("math").getAsString();
+
+        response.setContentType("application/json;charset=utf-8");
+        PrintWriter pw = response.getWriter();
+
+        if ("+".equals(operator)) {
+            double resultPlus = jsonObject.get("a").getAsDouble() + jsonObject.get("b").getAsDouble();
+            pw.print(gson.fromJson("{\nresult: " + resultPlus + "\n}", JsonObject.class));
+        } else if ("-".equals(operator)) {
+            double resultMinus = jsonObject.get("a").getAsDouble() + jsonObject.get("b").getAsDouble();
+            pw.print(gson.fromJson("{\n\"result\" : \"" + resultMinus + "\"\n}", JsonObject.class));
+        } else if ("*".equals(operator)) {
+            double resultMultiplication = jsonObject.get("a").getAsDouble() * jsonObject.get("b").getAsDouble();
+            pw.print(gson.fromJson("{\n\"result\" : \"" + resultMultiplication + "\"\n}", JsonObject.class));
+        } else if ("/".equals(operator)) {
+            double resultDivision = jsonObject.get("a").getAsDouble() / jsonObject.get("b").getAsDouble();
+            pw.print(gson.fromJson("{\n\"result\" : \"" + resultDivision + "\"\n}", JsonObject.class));
+        } else {
+            pw.print(gson.fromJson("{\nНеизвестная операция\n}", JsonObject.class));
+        }
+        pw.print("<br> <a href='index.jsp'> Возврат </a>");
     }
 }

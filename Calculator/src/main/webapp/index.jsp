@@ -13,7 +13,7 @@
         </tr>
         <tr>
             <td>
-                <input type="text" name="firstNum">
+                <input type="text" name="a">
                 <select name="operator">
                     <option value="-1">Оператор</option>
                     <option value="+">+</option>
@@ -21,7 +21,7 @@
                     <option value="*">*</option>
                     <option value="/">/</option>
                 </select>
-                <input type="text" name="secondNum">
+                <input type="text" name="b">
                 <input type="submit" value="Рассчитать">
             </td>
         </tr>
