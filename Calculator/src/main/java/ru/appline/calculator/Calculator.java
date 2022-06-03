@@ -52,7 +52,7 @@ public class Calculator extends HttpServlet {
             double resultDivision = jsonObject.get("a").getAsDouble() / jsonObject.get("b").getAsDouble();
             pw.print(gson.fromJson("{\n\"result\" : \"" + resultDivision + "\"\n}", JsonObject.class));
         } else {
-            pw.print(gson.fromJson("{\nНеизвестная операция\n}", JsonObject.class));
+            pw.print(gson.fromJson("{\n\"Ошибка ввода оператора, варианты\" : \"+, -, *, /\"\n}", JsonObject.class));
         }
         pw.print("<br> <a href='index.jsp'> Возврат </a>");
     }
