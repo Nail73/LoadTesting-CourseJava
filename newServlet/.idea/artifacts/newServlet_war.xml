@@ -9,9 +9,6 @@
     </properties>
     <root id="archive" name="newServlet-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="newServlet:war exploded" />
-      <element id="directory" name="lib">
-        <element id="library" level="project" name="gson-2.9.0" />
-      </element>
     </root>
   </artifact>
 </component>

@@ -2,6 +2,7 @@ package ru.appline;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
 import ru.appline.logic.Model;
 
 import javax.servlet.annotation.WebServlet;
@@ -13,25 +14,29 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/get")
 public class ServletList extends HttpServlet {
-
     Model model = Model.getInstance();
     Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("application/json; charset=utf-8");
+
+        JsonObject jsonObject1 = gson.fromJson("{\nid: " + request.getParameter("id") + "\n}", JsonObject.class);
+        int id = jsonObject1.get("id").getAsInt();
+
+        response.setContentType("application/json;charset=utf-8");
+
         PrintWriter pw = response.getWriter();
 
-        int id = Integer.parseInt(request.getParameter("id"));
         if (id == 0) {
-            pw.print((gson.toJson(model.getFromList())));
+            pw.print(gson.toJson(model.getFromList()));
         } else if (id > 0) {
             if (id > model.getFromList().size()) {
-                pw.print("There is no such user.");
+                pw.print(gson.fromJson("{\nТакого пользователя нет\n}", JsonObject.class));
             } else {
                 pw.print(gson.toJson(model.getFromList().get(id)));
             }
         } else {
-            pw.print("The ID must be greater than zero.");
+            pw.print(gson.fromJson("{\nID должен быть больше нуля\n}", JsonObject.class));
         }
     }
 }

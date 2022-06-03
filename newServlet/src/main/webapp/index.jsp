@@ -1,15 +1,12 @@
-<%@page import="ru.appline.logic.Model" %>
-
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
-
+<%@ page import="ru.appline.logic.Model" %>
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<h1>Домашняя страница по работе с пользователями
-</h1>
+<h1>Главная страница</h1>
 Введите ID пользователя (0 - для вывода всего списка пользователей)
 <br/>
 Доступно: <%
@@ -17,24 +14,13 @@
     out.print(model.getFromList().size());
 %>
 <form method="get" action="get">
-    <label>
-        ID:
-        <input type="text" name="id"> <br/>
+    <label>ID:
+        <input type="text" name="id"><br/>
     </label>
-    <button type="submit">
-        Поиск
-    </button>
+    <button type="submit">Поиск</button>
 </form>
-<form method="post" action="delete">
-    <label>
-        ID:
-        <input type="text" name="id"> <br/>
-    </label>
-    <button type="submit">
-        Удалить
-    </button>
-</form>
-<a href="add.jsp">Создать нового пользователя</a><br/>
-<a href="put.jsp">Редактировать пользователя</a>
+
+<br/>
+<a href="addUser.html">Создать нового пользователя</a>
 </body>
 </html>
