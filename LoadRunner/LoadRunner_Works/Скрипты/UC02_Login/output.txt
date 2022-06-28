@@ -1,0 +1,1497 @@
+Error: Parameter 'Password': Cannot find the line number from which to take the next value. This parameter is defined to use the same line as parameter 'Login'.
+Virtual User Script started at: 28.06.2022 15:28:58
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 2020.0.0 for Windows 8.1; build 793 (ноя 27 2019 19:51:20)  	[MsgId: MMSG-26983]
+Run mode: HTML  	[MsgId: MMSG-26993]
+Replay user agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko  	[MsgId: MMSG-26988]
+Runtime Settings file: "C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Скрипты\UC02_Login\\default.cfg"  	[MsgId: MMSG-27141]
+Vuser directory: "C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Скрипты\UC02_Login"  	[MsgId: MMSG-27052]
+Vuser output directory: "C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Скрипты\UC02_Login"  	[MsgId: MMSG-27050]
+Operating system's current working directory: "c:\users\гульнара\desktop\loadrunner\loadrunner_works\скрипты\uc02_login"  	[MsgId: MMSG-27048]
+UTC (GMT) start date/time   : 2022-06-28 11:28:58  	[MsgId: MMSG-26992]
+LOCAL start date/time       : 2022-06-28 15:28:58  	[MsgId: MMSG-26991]
+Local daylight-Savings-Time : No  	[MsgId: MMSG-26990]
+Some of the Runtime Settings:  	[MsgId: MMSG-27142]
+    Download non-HTML resources: Yes  	[MsgId: MMSG-27018]
+    Verification checks: No  	[MsgId: MMSG-27017]
+    Convert from/to UTF-8: No  	[MsgId: MMSG-27016]
+    Simulate a new user each iteration: Yes  	[MsgId: MMSG-27009]
+    Non-critical item errors as warnings: Yes  	[MsgId: MMSG-27008]
+    HTTP errors as warnings: No  	[MsgId: MMSG-27007]
+    WinInet replay instead of Sockets: No  	[MsgId: MMSG-27006]
+    HTTP version: 1.1  	[MsgId: MMSG-27005]
+    Keep-Alive HTTP connections: Yes  	[MsgId: MMSG-27004]
+    Max self Meta refresh updates: 2  	[MsgId: MMSG-27003]
+    No proxy is used (direct connection to the Internet)  	[MsgId: MMSG-27171]
+    DNS caching: Yes  	[MsgId: MMSG-27035]
+    Simulate browser cache: Yes  	[MsgId: MMSG-27034]
+        Cache URLs requiring content (e.g., HTMLs): Yes  	[MsgId: MMSG-27033]
+            Additional URLs requiring content: None  	[MsgId: MMSG-27032]
+        Check for newer versions every visit to the page: No  	[MsgId: MMSG-27031]
+    Page download timeout (sec): 120  	[MsgId: MMSG-27030]
+    Resource Page Timeout is a Warning: No  	[MsgId: MMSG-27029]
+    ContentCheck enabled: Yes  	[MsgId: MMSG-27028]
+    ContentCheck script-level file: "C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Скрипты\UC02_Login\LrwiAedScript.xml"  	[MsgId: MMSG-27027]
+    Enable Web Page Breakdown: Yes  	[MsgId: MMSG-27026]
+    Enable connection data points: Yes  	[MsgId: MMSG-27023]
+    Process socket after reschedule: Yes  	[MsgId: MMSG-27022]
+    Snapshot on error: No  	[MsgId: MMSG-27021]
+    Define each step as a transaction: No  	[MsgId: MMSG-27020]
+    Read beyond Content-Length: No  	[MsgId: MMSG-26994]
+    Parse HTML Content-Type: TEXT  	[MsgId: MMSG-26999]
+    Graph hits per second and HTTP status codes: Yes  	[MsgId: MMSG-26998]
+    Graph response bytes per second: Yes  	[MsgId: MMSG-26997]
+    Graph pages per second: No  	[MsgId: MMSG-26996]
+    Web recorder version ID: 10  	[MsgId: MMSG-26995]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Maximum number of concurrent connections per server: 6  	[MsgId: MMSG-26989]
+Starting action Action.
+Action.c(3): Notify: Transaction "UC02_Login" started.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(2): Notify: Transaction "homePage" started.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(4): web_add_auto_header("DNT") started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(4): An unrecognized header ("DNT") is being added  	[MsgId: MMSG-26595]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(4): "DNT: 1" header registered for adding to requests from all following Action functions  	[MsgId: MMSG-26505]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(4): web_add_auto_header("DNT") was successful  	[MsgId: MMSG-26392]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(7): web_reg_find started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(7): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(10): web_reg_save_param_attrib started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(10): Registering web_reg_save_param_attrib was successful  	[MsgId: MMSG-26390]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): web_url("WebTours") started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=382ms: Connecting [0] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=383ms: Connected socket [0] from 127.0.0.1:16031 to 127.0.0.1:1080 in 1 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=383ms: 232-byte request headers for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/ HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=391ms: 299-byte response headers for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "6200000004f10c-16e-4ddb1559ac980"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 366\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: text/html\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=405ms: 366-byte response body for "http://localhost:1080/WebTours/" (RelFrameId=1, Internal ID=1)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HTML>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HEAD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <title>Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <frameset rows = "65,*" border="1" bordercolor="#E0E7F1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <frame name="header" src="header.html" scrolling="no" noresize="noresize" marginheight="2"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      marginwidth="2"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <frame name="body" src="/cgi-bin/welcome.pl?signOff=true" scrolling="auto" noresize="nores
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ize" marginheight="2" marginwidth="2" />\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </frameset>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </HEAD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </HTML>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Detected non-resource "http://localhost:1080/WebTours/header.html" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Detected non-resource "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" in "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=411ms: Request done "http://localhost:1080/WebTours/"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Request URL"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=418ms: Connecting [1] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=419ms: Connecting [2] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=420ms: Connected socket [1] from 127.0.0.1:16032 to 127.0.0.1:1080 in 1 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=420ms: 285-byte request headers for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/header.html HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/WebTours/\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=421ms: Connected socket [2] from 127.0.0.1:16033 to 127.0.0.1:1080 in 2 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=421ms: 296-byte request headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /cgi-bin/welcome.pl?signOff=true HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/WebTours/\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=422ms: 300-byte response headers for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "12e00000004e55c-2c6-4ddb1559ac980"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 710\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: text/html\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=424ms: 710-byte response body for "http://localhost:1080/WebTours/header.html" (RelFrameId=1.1, Internal ID=2)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <!DOCTYPE html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HTML xmlns="http://www.w3.org/1999/xhtml">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HEAD></HEAD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <BODY bgcolor="#003366" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t<table width="100%" border="0" cellspacing="0" cellpadding="0">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t\t<tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t\t\t<td align="left" valign="middle" width="50%"><img src="images/hp_logo.png" alt="" 
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     height="45" width="69" align="absmiddle" border="0"/><img src="images/webtours.png" alt=""
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      height="45" width="130" align="absmiddle" border="0"/></td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t\t\t<td align="right"></td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t\t\t<td></td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t\t</tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t\t</table>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t</BODY>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </HTML>
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Found resource "http://localhost:1080/WebTours/images/hp_logo.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Found resource "http://localhost:1080/WebTours/images/webtours.png" in HTML "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=429ms: Request done "http://localhost:1080/WebTours/header.html"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Request URL"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=458ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=458ms: 303-byte request headers for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/images/hp_logo.png HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/WebTours/header.html\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=460ms: Connecting [3] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=461ms: 298-byte response headers for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "2300000004eb83-259-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 601\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=99\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: image/png\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=463ms: 601-byte response body for "http://localhost:1080/WebTours/images/hp_logo.png" (RelFrameId=, Internal ID=4)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=463ms: Request done "http://localhost:1080/WebTours/images/hp_logo.png"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Content Type"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=465ms: Connected socket [3] from 127.0.0.1:16034 to 127.0.0.1:1080 in 5 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=465ms: 304-byte request headers for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/images/webtours.png HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/WebTours/header.html\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=467ms: 301-byte response headers for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Mon, 04 Nov 2013 13:47:02 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "4400000004f0eb-105b-4ea5a26938180"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 4187\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: image/png\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=469ms: 1159-byte response body for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=470ms: 3028-byte response body for "http://localhost:1080/WebTours/images/webtours.png" (RelFrameId=, Internal ID=5)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=470ms: Request done "http://localhost:1080/WebTours/images/webtours.png"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Content Type"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=497ms: 328-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Set-Cookie: MSO=SID&1656415738; path=/\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Set-Cookie: MTUserInfo=; path=/; expires=Mon, 27-Jun-2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=498ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     2ae\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=498ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=499ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <!-- \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      A Session ID has been created and loaded into a cookie called MSO.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      Also, the server options have been loaded into the cookie called\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      MSO as well.  The server options can be set via the Admin page.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):      --->\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <title>Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):        <!-- Frame Set -->\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):        <frameset cols="160,*" border="1" frameborder="1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):           <!-- Navigation Frame -->\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):                 noresize="noresize" scrolling="auto"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):           <!-- Home Frame -->\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):                 noresize="noresize" scrolling="auto"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):        </frameset>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </html>
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=504ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=504ms: 337-byte request headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Cookie: MSO=SID&1656415738\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=505ms: Already connected [1] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=505ms: 333-byte request headers for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/home.html HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=true\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Cookie: MSO=SID&1656415738\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=506ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=true" (RelFrameId=1.2, Internal ID=3)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=507ms: Request done "http://localhost:1080/cgi-bin/welcome.pl?signOff=true"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Request URL"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=517ms: 299-byte response headers for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Mon, 27 May 2013 11:20:22 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "2e00000004e56e-551-4ddb1559ac980"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 1361\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=99\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: text/html\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=518ms: 1361-byte response body for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2.2, Internal ID=7)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HTML>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <HEAD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t<title>Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </HEAD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     N: none}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     CORATION: underline}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <body bgcolor="#e0e7f1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <BR/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <BR/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <BR/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <table border="0">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td></td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <TR><TD></TD></TR>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <TR><TD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <blockquote>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <H1><b>Web Tours</b></H1>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Welcome to the Web Tours site.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     To make reservations,please enter your account information to the left.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     tration</b></A> link.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/><br/><br/><br/><br/><br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <br/><small>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </small>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </blockquote></TD>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <TD></TD></TR>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </table>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </HTML>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=523ms: Request done "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Search registration for "userSession" parameter is filtered by "Request URL"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=580ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Expires: Mon, 27 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=98\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=581ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     5d1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=581ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=582ms: 1489-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <!DOCTYPE html\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <title>Web Tours Navigation Bar</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <body bgcolor="#E0E7F1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     blockquote {font-family: tahoma; font-size : 10pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     small {font-family: tahoma; font-size : 8pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <input type="hidden" name="userSession" value="134177.054515998zQAVHDcpctVzzzzHtVtVApDQDtf
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     "/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <table border="0"><tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td>&nbsp;</td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td>&nbsp;</td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td><small>&nbsp;Username</small></td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td><small>&nbsp;Password</small></td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td>&nbsp;</td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </form>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     </html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Found resource "http://localhost:1080/WebTours/images/mer_login.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=586ms: Already connected [1] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=586ms: 335-byte request headers for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     GET /WebTours/images/mer_login.gif HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Referer: http://localhost:1080/cgi-bin/nav.pl?in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Cookie: MSO=SID&1656415738\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=588ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.2.1, Internal ID=6)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=589ms: Request done "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Notify: Saving Parameter "userSession = 134177.054515998zQAVHDcpctVzzzzHtVtVApDQDtf".
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=591ms: 298-byte response headers for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     ETag: "9400000004ecc4-2a7-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Length: 679\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Keep-Alive: timeout=5, max=98\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     Content-Type: image/gif\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=592ms: 679-byte response body for "http://localhost:1080/WebTours/images/mer_login.gif" (RelFrameId=, Internal ID=8)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): t=593ms: Request done "http://localhost:1080/WebTours/images/mer_login.gif"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): Registered web_reg_find successful for "Text=Welcome to the Web Tours site" (count=1)  	[MsgId: MMSG-26364]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(21): web_url("WebTours") was successful, 10079 body bytes, 2378 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(31): web_set_sockets_option started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(31): web_set_sockets_option was successful  	[MsgId: MMSG-26392]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(33): Notify: Transaction "homePage" ended with a "Pass" status (Duration: 0.3843 Wasted Time: 0.1649).
+Action.c(7): Notify: Transaction "clickToRegProfile" started.
+Action.c(9): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(9): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(11): web_url("sign up now") started  	[MsgId: MMSG-26355]
+Action.c(11): t=726ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+Action.c(11): t=726ms: 351-byte request headers for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     GET /cgi-bin/login.pl?username=&password=&getInfo=true HTTP/1.1\r\n
+Action.c(11):     Referer: http://localhost:1080/WebTours/home.html\r\n
+Action.c(11):     DNT: 1\r\n
+Action.c(11):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(11):     Accept-Encoding: gzip, deflate\r\n
+Action.c(11):     Accept-Language: ru-RU\r\n
+Action.c(11):     Accept: */*\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Host: localhost:1080\r\n
+Action.c(11):     Cookie: MSO=SID&1656415738\r\n
+Action.c(11):     \r\n
+Action.c(11): t=810ms: 228-byte response headers for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     HTTP/1.1 200 OK\r\n
+Action.c(11):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+Action.c(11):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(11):     Expires: 5s\r\n
+Action.c(11):     Keep-Alive: timeout=5, max=97\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Transfer-Encoding: chunked\r\n
+Action.c(11):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(11):     \r\n
+Action.c(11): t=813ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     97d\r\n
+Action.c(11): t=813ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     \r\n
+Action.c(11): t=815ms: 2429-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     <!DOCTYPE html\n
+Action.c(11):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(11):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(11):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(11):     <head>\n
+Action.c(11):     <title>User Information</title>\n
+Action.c(11):     <script src="/WebTours/profileValidate.js" type="text/JavaScript"></script>\n
+Action.c(11):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(11):     </head>\n
+Action.c(11):     <body bgcolor="#E0E7F1">\n
+Action.c(11):     <style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; font-siz
+Action.c(11):     e : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family: taho
+Action.c(11):     ma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: black
+Action.c(11):     }</style><BR/><center><H1><b><font color="#003366">Customer Profile</font></b></H1></cente
+Action.c(11):     r><blockquote><tr><td><B>First time registering? Please complete the form below.</B><BR/>P
+Action.c(11):     lease choose a username and password combination for your account.<BR/>We'd also like some
+Action.c(11):      additional contact information for yourself. We'll use it as default shipping and billing
+Action.c(11):      information when making all your travel arrangements.<P><tr><td align=center><form method
+Action.c(11):     ="post" action="login.pl" enctype="application/x-www-form-urlencoded" target="info" onsubm
+Action.c(11):     it>\n
+Action.c(11):     <table><tr><td align="left"><blockquote>Username : </td> <td align="left"><input type="tex
+Action.c(11):     t" name="username"  size="20" /></td></tr> <tr><td align="left"><blockquote>Password : </t
+Action.c(11):     d> <td align="left"><input type="password" name="password"  size="20" /></td></tr> <tr><td
+Action.c(11):      align="left"><blockquote>Confirm : </td> <td align="left"><input type="password" name="pa
+Action.c(11):     sswordConfirm"  size="20" /></td></tr> <tr><td> </td></tr> <tr><td align="left"><blockquot
+Action.c(11):     e>First Name : </td> <td align="left"><input type="text" name="firstName"  size="20" /></t
+Action.c(11):     d></tr> <tr><td align="left"><blockquote>Last Name : </td> <td align="left"><input type="t
+Action.c(11):     ext" name="lastName"  size="20" /></td></tr> <tr><td align="left"><blockquote>Street Addre
+Action.c(11):     ss : </td> <td align="left"><input type="text" name="address1"  size="30" /></td></tr> <tr
+Action.c(11):     ><td align="left"><blockquote>City/State/Zip : </td> <td align="left"><input type="text" n
+Action.c(11):     ame="address2"  size="30" /></td></tr> <tr><td align="left">&nbsp;</td> <td align="right">
+Action.c(11):     &nbsp;</td></tr> <tr><td align="center" colspan="2"><input type="image" name="register" sr
+Action.c(11):     c="/WebTours/images/button_next.gif" border="0" /></td></tr></table></form></table></block
+Action.c(11):     quote>\n
+Action.c(11):     </body>\n
+Action.c(11):     </html>\n
+Action.c(11): Found resource "http://localhost:1080/WebTours/profileValidate.js" in HTML "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MMSG-26659]
+Action.c(11): Found resource "http://localhost:1080/WebTours/images/button_next.gif" in HTML "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MMSG-26659]
+Action.c(11): t=820ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true" (RelFrameId=1, Internal ID=9)
+Action.c(11):     0\r\n
+Action.c(11):     \r\n
+Action.c(11): t=820ms: Request done "http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true"  	[MsgId: MMSG-26000]
+Action.c(11): t=821ms: Already connected [1] to localhost:1080  	[MsgId: MMSG-26000]
+Action.c(11): t=822ms: 360-byte request headers for "http://localhost:1080/WebTours/profileValidate.js" (RelFrameId=, Internal ID=10)
+Action.c(11):     GET /WebTours/profileValidate.js HTTP/1.1\r\n
+Action.c(11):     Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true\r\n
+Action.c(11):     DNT: 1\r\n
+Action.c(11):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(11):     Accept-Encoding: gzip, deflate\r\n
+Action.c(11):     Accept-Language: ru-RU\r\n
+Action.c(11):     Accept: */*\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Host: localhost:1080\r\n
+Action.c(11):     Cookie: MSO=SID&1656415738\r\n
+Action.c(11):     \r\n
+Action.c(11): t=824ms: Already connected [2] to localhost:1080  	[MsgId: MMSG-26000]
+Action.c(11): t=824ms: 364-byte request headers for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=11)
+Action.c(11):     GET /WebTours/images/button_next.gif HTTP/1.1\r\n
+Action.c(11):     Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true\r\n
+Action.c(11):     DNT: 1\r\n
+Action.c(11):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(11):     Accept-Encoding: gzip, deflate\r\n
+Action.c(11):     Accept-Language: ru-RU\r\n
+Action.c(11):     Accept: */*\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Host: localhost:1080\r\n
+Action.c(11):     Cookie: MSO=SID&1656415738\r\n
+Action.c(11):     \r\n
+Action.c(11): t=825ms: 314-byte response headers for "http://localhost:1080/WebTours/profileValidate.js" (RelFrameId=, Internal ID=10)
+Action.c(11):     HTTP/1.1 200 OK\r\n
+Action.c(11):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+Action.c(11):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(11):     Last-Modified: Sun, 22 Apr 2012 14:28:18 GMT\r\n
+Action.c(11):     ETag: "4900000004f187-2c18-4be45552ee480"\r\n
+Action.c(11):     Accept-Ranges: bytes\r\n
+Action.c(11):     Content-Length: 11288\r\n
+Action.c(11):     Keep-Alive: timeout=5, max=97\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Content-Type: application/javascript\r\n
+Action.c(11):     \r\n
+Action.c(11): t=827ms: 11288-byte response body for "http://localhost:1080/WebTours/profileValidate.js" (RelFrameId=, Internal ID=10)
+Action.c(11):     // check for IE3\n
+Action.c(11):     var isIE3 = (navigator.appVersion.indexOf('MSIE 3') != -1);\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** define and instantiate validation objects\n
+Action.c(11):     ** the validation object accepts the following parameters:\n
+Action.c(11):     **\n
+Action.c(11):     **   realName: name used in the alerts (same as label on the page)\n
+Action.c(11):     **\n
+Action.c(11):     **   formEltName: this must be the name of the corresponding\n
+Action.c(11):     **       HTML form element; make it the same as the object name\n
+Action.c(11):     **\n
+Action.c(11):     **   eltType: element type (we have to create this since IE3\n
+Action.c(11):     **       doesn't support the type property for for elements)\n
+Action.c(11):     **     text\n
+Action.c(11):     **     textarea\n
+Action.c(11):     **     checkbox\n
+Action.c(11):     **     radio\n
+Action.c(11):     **     select\n
+Action.c(11):     **\n
+Action.c(11):     **   uptoSnuff: function call that's evaluated during validation check\n
+Action.c(11):     **     isText(str)\n
+Action.c(11):     **     isSelect(formObj)\n
+Action.c(11):     **     isRadio(formObj)\n
+Action.c(11):     **     isCheck(formObj, form, [index of first checkbox in group],\n
+Action.c(11):     **         [number of checkboxes])\n
+Action.c(11):     **     isEmail(str)\n
+Action.c(11):     **     isState(str)\n
+Action.c(11):     **     isZipCode(str)\n
+Action.c(11):     **     isPhoneNum(str)\n
+Action.c(11):     **     isDate(str)\n
+Action.c(11):     **\n
+Action.c(11):     **   format: text representation of required format;\n
+Action.c(11):     **       pass 'null' if no required format;\n
+Action.c(11):     **       used in alert as an aid to user\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     \n
+Action.c(11):     // object definition\n
+Action.c(11):     function validation(realName, formEltName, eltType, upToSnuff, format) {\n
+Action.c(11):       this.realName = realName;\n
+Action.c(11):       this.formEltName = formEltName;\n
+Action.c(11):       this.eltType = eltType;\n
+Action.c(11):       this.upToSnuff = upToSnuff;\n
+Action.c(11):       this.format = format;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** create a new object for each form element you need to validate\n
+Action.c(11):     ** for example:\n
+Action.c(11):     ** var lastName = new validation('last name', 'lastName', 'text', 'isText(str)', null);\n
+Action.c(11):     ** var phoneNum = new validation('phone number', 'phoneNum', 'text', 'isPhoneNum(str)', 'x
+Action.c(11):     xx-xxx-xxxx');\n
+Action.c(11):     ** var reason = new validation('reason for reading this', 'reason', 'checkbox', 'isCheck(f
+Action.c(11):     ormObj, form, 14, 3)', null);\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     // create objects here:\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     var username = new validation('a username', 'username', 'text', 'isText(str)', null);\n
+Action.c(11):     var password = new validation('a password', 'password', 'text', 'isText(str)', null);\n
+Action.c(11):     var passwordC = new validation('a password confirmation', 'passwordConfirm', 'text', 'isTe
+Action.c(11):     xt(str)', null);\n
+Action.c(11):     var firstN = new validation('your first name', 'firstName', 'text', 'isText(str)', null);\n
+Action.c(11):     var lastN = new validation('your last name', 'lastName', 'text', 'isText(str)', null);\n
+Action.c(11):     var address = new validation('your address', 'address1', 'text', 'isText(str)', null);\n
+Action.c(11):     var csz = new validation('your City/State/Zip', 'address2', 'text', 'isText(str)', null);\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** Define the elts array:\n
+Action.c(11):     ** Add a new item to the array for each object you create above\n
+Action.c(11):     ** Make sure the value of the array element is the same as\n
+Action.c(11):     ** the name of the object, and that the array elements are listed\n
+Action.c(11):     ** in the same order the corresponding objects appear in the form\n
+Action.c(11):     ** (it's more clear to the user that way)\n
+Action.c(11):     ** for example:\n
+Action.c(11):     ** var elts = new Array(lastName, phoneNum, reason)\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     var elts = new Array(username, password, passwordC, firstN, lastN, address, csz);\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** The main function keeps track of which fields the user missed\n
+Action.c(11):     ** or filled in incorrectly, and alerts the user so they can go\n
+Action.c(11):     ** back and fix what's wrong.\n
+Action.c(11):     ** Set allAtOnce to true if you want this "validation help" to\n
+Action.c(11):     ** alert the user to all mistakes at once; set it to false if\n
+Action.c(11):     ** you want it to show one mistake at a time\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     var allAtOnce = true;\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** change text for alerts here\n
+Action.c(11):     ** unspecified field (text): "Please include [field name]."\n
+Action.c(11):     ** unspecified field (other): "Please choose [field name]."\n
+Action.c(11):     ** invalid text field entries: "[field value] is an invalid [field name]!"\n
+Action.c(11):     ** help with format: "Use this format: "\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     var beginRequestAlertForText = "Please include ";\n
+Action.c(11):     var beginRequestAlertGeneric = "Please choose ";\n
+Action.c(11):     var endRequestAlert = ".";\n
+Action.c(11):     var beginInvalidAlert = " is an invalid ";\n
+Action.c(11):     var endInvalidAlert = "!";\n
+Action.c(11):     var beginFormatAlert = "  Use this format: ";\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** these functions validate the string or form object passed in,\n
+Action.c(11):     ** and return true or false based on whether the test succeeds or fails\n
+Action.c(11):     **\n
+Action.c(11):     ** validate existence of input\n
+Action.c(11):     **   isText(str): verifies text input or textarea is not empty\n
+Action.c(11):     **   isSelect(formObj): verifies item from a select menu is chosen\n
+Action.c(11):     **   isRadio(formObj): verifies one of a group of radio buttons is chosen\n
+Action.c(11):     **   isCheck(formObj, form, [begin], [num]): verifies at least one\n
+Action.c(11):     **       of a group of checkboxes is checked\n
+Action.c(11):     **     for [begin], fill in the index number in the elements array\n
+Action.c(11):     **         of the first checkbox (remember to start counting from zero)\n
+Action.c(11):     **     for [num], fill in the number of checkboxes in the group\n
+Action.c(11):     **\n
+Action.c(11):     ** validate text in text input or textarea matches pattern\n
+Action.c(11):     **   isEmail(str): verifies email address (contains "@" and ".")\n
+Action.c(11):     **   isState(str): verifies U.S. State Code\n
+Action.c(11):     **   isZipCode(str): verifies zip code of form xxxxx or xxxxx-xxxx\n
+Action.c(11):     **   isPhoneNum(str): verifies phone number of form xxx-xxx-xxxx\n
+Action.c(11):     **   isDate(str): verifies date of form mm/dd/yyyy\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     \n
+Action.c(11):     function isText(str) {\n
+Action.c(11):       return (str != "");\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isSelect(formObj) {\n
+Action.c(11):       return (formObj.selectedIndex != 0);\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isRadio(formObj) {\n
+Action.c(11):       for (j=0; j<formObj.length; j++) {\n
+Action.c(11):         if (formObj[j].checked) {\n
+Action.c(11):           return true;\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):       return false;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isCheck(formObj, form, begin, num) {\n
+Action.c(11):       for (j=begin; j<begin+num; j++) {\n
+Action.c(11):         if (form.elements[j].checked) {\n
+Action.c(11):           return true;\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):       return false;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isEmail(str) {\n
+Action.c(11):       return ((str != "") && (str.indexOf("@") != -1) && (str.indexOf(".") != -1));\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isState(str) {\n
+Action.c(11):       str = str.toUpperCase();\n
+Action.c(11):       return ( (str == "AK") || (str == "AL") || (str == "AR") || (str == "AZ") || (str == "CA
+Action.c(11):     ") || (str == "CO") || (str == "CT") || (str == "DC") || (str == "DE") || (str == "FL") ||
+Action.c(11):      (str == "GA") || (str == "HI") || (str == "IA") || (str == "ID") || (str == "IL") || (str
+Action.c(11):      == "IN") || (str == "KS") || (str == "KY") || (str == "LA") || (str == "MA") || (str == "
+Action.c(11):     MD") || (str == "ME") || (str == "MI") || (str == "MN") || (str == "MO") || (str == "MS") 
+Action.c(11):     || (str == "MT") || (str == "NB") || (str == "NC") || (str == "ND") || (str == "NH") || (s
+Action.c(11):     tr == "NJ") || (str == "NM") || (str == "NV") || (str == "NY") || (str == "OH") || (str ==
+Action.c(11):      "OK") || (str == "OR") || (str == "PA") || (str == "RI") || (str == "SC") || (str == "SD"
+Action.c(11):     ) || (str == "TN") || (str == "TX") || (str == "UT") || (str == "VA") || (str == "VT") || 
+Action.c(11):     (str == "WA") || (str == "WI") || (str == "WV") || (str == "WY") );\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isZipCode(str) {\n
+Action.c(11):       var l = str.length;\n
+Action.c(11):       if ((l != 5) && (l != 10)) { return false }\n
+Action.c(11):       for (j=0; j<l; j++) {\n
+Action.c(11):         if ((l == 10) && (j == 5)) {\n
+Action.c(11):           if (str.charAt(j) != "-") { return false }\n
+Action.c(11):         } else {\n
+Action.c(11):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):       return true;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isPhoneNum(str) {\n
+Action.c(11):       if (str.length != 12) { return false }\n
+Action.c(11):       for (j=0; j<str.length; j++) {\n
+Action.c(11):         if ((j == 3) || (j == 7)) {\n
+Action.c(11):           if (str.charAt(j) != "-") { return false }\n
+Action.c(11):         } else {\n
+Action.c(11):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):       return true;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     function isDate(str) {\n
+Action.c(11):       if (str.length != 10) { return false }\n
+Action.c(11):     \n
+Action.c(11):       for (j=0; j<str.length; j++) {\n
+Action.c(11):         if ((j == 2) || (j == 5)) {\n
+Action.c(11):           if (str.charAt(j) != "/") { return false }\n
+Action.c(11):         } else {\n
+Action.c(11):           if ((str.charAt(j) < "0") || (str.charAt(j) > "9")) { return false }\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):     \n
+Action.c(11):       var month = str.charAt(0) == "0" ? parseInt(str.substring(1,2)) : parseInt(str.substring
+Action.c(11):     (0,2));\n
+Action.c(11):       var day = str.charAt(3) == "0" ? parseInt(str.substring(4,5)) : parseInt(str.substring(3
+Action.c(11):     ,5));\n
+Action.c(11):       var begin = str.charAt(6) == "0" ? (str.charAt(7) == "0" ? (str.charAt(8) == "0" ? 9 : 8
+Action.c(11):     ) : 7) : 6;\n
+Action.c(11):       var year = parseInt(str.substring(begin, 10));\n
+Action.c(11):     \n
+Action.c(11):       if (day == 0) { return false }\n
+Action.c(11):       if (month == 0 || month > 12) { return false }\n
+Action.c(11):       if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 ||
+Action.c(11):      month == 12) {\n
+Action.c(11):         if (day > 31) { return false }\n
+Action.c(11):       } else {\n
+Action.c(11):         if (month == 4 || month == 6 || month == 9 || month == 11) {\n
+Action.c(11):           if (day > 30) { return false }\n
+Action.c(11):         } else {\n
+Action.c(11):           if (year%4 != 0) {\n
+Action.c(11):             if (day > 28) { return false }\n
+Action.c(11):           } else {\n
+Action.c(11):             if (day > 29) { return false }\n
+Action.c(11):           }\n
+Action.c(11):         }\n
+Action.c(11):       }\n
+Action.c(11):       return true;\n
+Action.c(11):     }\n
+Action.c(11):     \n
+Action.c(11):     \n
+Action.c(11):     /***************************************************************\n
+Action.c(11):     ** The validateForm() function validates the form elements\n
+Action.c(11):     ** previously defined as validation objects and as members of\n
+Action.c(11):     ** the elts array. We loop through the elts array, testing each\n
+Action.c(11):     ** element in turn, and alerting the user when they've missed\n
+Action.c(11):     ** a required field\n
+Action.c(11):     ***************************************************************/\n
+Action.c(11):     \n
+Action.c(11):     function validateForm(form) {\n
+Action.c(11):       var formEltName = "";\n
+Action.c(11):       var formObj = "";\n
+Action.c(11):       var str = "";\n
+Action.c(11):       var realName = "";\n
+Action.c(11):       var alertText = "";\n
+Action.c(11):       var firstMissingElt = null;\n
+Action.c(11):       var hardReturn = "\\r\\n";\n
+Action.c(11):     \n
+Action.c(11):       for (i=0; i<elts.length; i++) {\n
+Action.c(11):         formEltName = elts[i].formEltName;\n
+Action.c(11):         formObj = eval("form." + formEltName);\n
+Action.c(11):         realName = elts[i].realName;\n
+Action.c(11):     \n
+Action.c(11):         if (elts[i].eltType == "text") {\n
+Action.c(11):           str = formObj.value;\n
+Action.c(11):     \n
+Action.c(11):           if (eval(elts[i].upToSnuff)) continue;\n
+Action.c(11):     \n
+Action.c(11):           if (str == "") {\n
+Action.c(11):             if (allAtOnce) {\n
+Action.c(11):               alertText += beginRequestAlertForText + realName + endRequestAlert + hardReturn;
+Action.c(11):     \n
+Action.c(11):               if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(11):             } else {\n
+Action.c(11):               alertText = beginRequestAlertForText + realName + endRequestAlert + hardReturn;\n
+Action.c(11):               alert(alertText);\n
+Action.c(11):             }\n
+Action.c(11):           } else {\n
+Action.c(11):             if (allAtOnce) {\n
+Action.c(11):               alertText += str + beginInvalidAlert + realName + endInvalidAlert + hardReturn;\n
+Action.c(11):             } else {\n
+Action.c(11):               alertText = str + beginInvalidAlert + realName + endInvalidAlert + hardReturn;\n
+Action.c(11):             }\n
+Action.c(11):             if (elts[i].format != null) {\n
+Action.c(11):               alertText += beginFormatAlert + elts[i].format + hardReturn;\n
+Action.c(11):             }\n
+Action.c(11):             if (allAtOnce) {\n
+Action.c(11):               if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(11):             } else {\n
+Action.c(11):               alert(alertText);\n
+Action.c(11):             }\n
+Action.c(11):           }\n
+Action.c(11):         } else {\n
+Action.c(11):           if (eval(elts[i].upToSnuff)) continue;\n
+Action.c(11):           if (allAtOnce) {\n
+Action.c(11):             alertText += beginRequestAlertGeneric + realName + endRequestAlert + hardReturn;\n
+Action.c(11):             if (firstMissingElt == null) {firstMissingElt = formObj};\n
+Action.c(11):           } else {\n
+Action.c(11):             alertText = beginRequestAlertGeneric + realName + endRequestAlert + hardReturn;\n
+Action.c(11):             alert(alertText);\n
+Action.c(11):           }\n
+Action.c(11):         }\n
+Action.c(11):         if (!isIE3) {\n
+Action.c(11):           var goToObj = (allAtOnce) ? firstMissingElt : formObj;\n
+Action.c(11):           if (goToObj.select) goToObj.select();\n
+Action.c(11):           if (goToObj.focus) goToObj.focus();\n
+Action.c(11):         }\n
+Action.c(11):         if (!allAtOnce) {return false};\n
+Action.c(11):       }\n
+Action.c(11):       if (allAtOnce) {\n
+Action.c(11):         if (alertText != "") {\n
+Action.c(11):           alert(alertText);\n
+Action.c(11):           return false;\n
+Action.c(11):         }\n
+Action.c(11):       } \n
+Action.c(11):     //  alert("I am valid!"); //remove this line when you use the code\n
+Action.c(11):       return true; //change this to return true to make the form submit\n
+Action.c(11):     }\n
+Action.c(11): t=857ms: Request done "http://localhost:1080/WebTours/profileValidate.js"  	[MsgId: MMSG-26000]
+Action.c(11): t=858ms: 298-byte response headers for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=11)
+Action.c(11):     HTTP/1.1 200 OK\r\n
+Action.c(11):     Date: Tue, 28 Jun 2022 11:28:58 GMT\r\n
+Action.c(11):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(11):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+Action.c(11):     ETag: "2800000004e5e1-2f6-4b654c0620500"\r\n
+Action.c(11):     Accept-Ranges: bytes\r\n
+Action.c(11):     Content-Length: 758\r\n
+Action.c(11):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(11):     Connection: Keep-Alive\r\n
+Action.c(11):     Content-Type: image/gif\r\n
+Action.c(11):     \r\n
+Action.c(11): t=860ms: 758-byte response body for "http://localhost:1080/WebTours/images/button_next.gif" (RelFrameId=, Internal ID=11)
+Action.c(11): t=861ms: Request done "http://localhost:1080/WebTours/images/button_next.gif"  	[MsgId: MMSG-26000]
+Action.c(11): Registered web_reg_find successful for "Text=First time registering?" (count=1)  	[MsgId: MMSG-26364]
+Action.c(11): web_url("sign up now") was successful, 14475 body bytes, 840 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(21): Notify: Transaction "clickToRegProfile" ended with a "Pass" status (Duration: 0.1626 Wasted Time: 0.0091).
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(39): Notify: Transaction "regProfile" started.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(41): web_reg_find started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(41): Notify: Parameter Substitution: parameter "Username" =  "petr565"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(41): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): web_submit_data("login.pl") started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Notify: Parameter Substitution: parameter "Username" =  "petr565"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Error: Parameter 'Password': Cannot find the line number from which to take the next value. This parameter is defined to use the same line as parameter 'Login'.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Notify: Next row for parameter Password = 1 [table  = Password].
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Notify: Parameter Substitution: parameter "Password" =  "bean"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Error: Parameter 'Password': Cannot find the line number from which to take the next value. This parameter is defined to use the same line as parameter 'Login'.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Notify: Next row for parameter Password = 1 [table  = Password].
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Notify: Parameter Substitution: parameter "Password" =  "bean"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Warning: The string 'FirstName' with parameter delimiters is not a parameter.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Warning: The string 'LastName' with parameter delimiters is not a parameter.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Warning: The string 'StreetAddress' with parameter delimiters is not a parameter.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Warning: The string 'City' with parameter delimiters is not a parameter.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=891ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=892ms: 420-byte request headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     POST /cgi-bin/login.pl HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Content-Type: application/x-www-form-urlencoded\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Referer: http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Cookie: MSO=SID&1656415738\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Content-Length: 177\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=892ms: 177-byte request body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     username=petr565&password=bean&passwordConfirm=bean&firstName=%7BFirstName%7D&lastName=%7B
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     LastName%7D&address1=%7BStreetAddress%7D&address2=%7BCity%7D&register.x=34&register.y=5
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=963ms: 406-byte response headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Expires: 5s\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Set-Cookie: MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&username&petr565&hash
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     &117&lastName&%7BLastName%7D&address1&%7BStreetAddress%7D&creditCard&&expDate&; path=/\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Keep-Alive: timeout=5, max=96\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=966ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     438\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=967ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=968ms: 1080-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <!DOCTYPE html\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <title>Welcome to Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     </head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <body bgcolor="#E0E7F1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <br/><br/><br/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     <p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; fon
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     t-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family:
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):      tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: 
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     black}</style><blockquote>Thank you, <b>petr565</b>, for registering and welcome to the We
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     b Tours family.\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     We hope we can meet all your current and future travel needs.  If you have any questions, 
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     feel free \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     to ask our support staff.   Click below when you're ready to plan your dream trip...<p /><
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     center><a href=welcome.pl?page=menus target='body'><img src=/WebTours/images/button_next.g
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     if border=0></a></center></blockquote>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     </html>
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Resource "http://localhost:1080/WebTours/images/button_next.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=971ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=12)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): t=971ms: Request done "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): Registered web_reg_find successful for "Text=<blockquote>Thank you, <b>petr565</b>, for registering and welcome" (count=1)  	[MsgId: MMSG-26364]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(43): web_submit_data("login.pl") was successful, 1080 body bytes, 406 header bytes, 12 chunking overhead bytes  	[MsgId: MMSG-26385]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(63): Notify: Transaction "regProfile" ended with a "Pass" status (Duration: 0,1077 Wasted Time: 0,0095).
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(69): Notify: Transaction "login" started.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(71): web_reg_find started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(71): Notify: Parameter Substitution: parameter "Username" =  "petr565"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(71): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): web_submit_data("login.pl_2") started  	[MsgId: MMSG-26355]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Notify: Parameter Substitution: parameter "userSession" =  "134177.054515998zQAVHDcpctVzzzzHtVtVApDQDtf"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Notify: Parameter Substitution: parameter "Username" =  "petr565"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Error: Parameter 'Password': Cannot find the line number from which to take the next value. This parameter is defined to use the same line as parameter 'Login'.
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Notify: Next row for parameter Password = 1 [table  = Password].
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Notify: Parameter Substitution: parameter "Password" =  "bean"
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1004ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1004ms: 551-byte request headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     POST /cgi-bin/login.pl HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: application/x-www-form-urlencoded\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/nav.pl?in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D&address1&%7BStreetAddress%7D&creditCard&&expD
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ate&\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Length: 124\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1005ms: 124-byte request body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     userSession=134177.054515998zQAVHDcpctVzzzzHtVtVApDQDtf&username=petr565&password=bean&JSF
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ormSubmit=off&login.x=58&login.y=7
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1094ms: 412-byte response headers for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Expires: 5s\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Set-Cookie: MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&username&petr565&hash
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     &117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&expDate&%0A; path
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     =/\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=95\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1099ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     1e1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1099ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1100ms: 481-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <!--\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User password was correct - added a cookie with the user's default\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     information.  Set the user up to make reservations...\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     --->\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <title>Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <frameset cols="160,*" border=1 frameborder=1>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <frame src="nav.pl?page=menu&in=home" name="navbar" marginheight="2" marginwidth="2" nores
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ize="noresize" scrolling="auto"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <frame src="login.pl?intro=true" name="info" marginheight="2" marginwidth="2" noresize="no
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     resize" scrolling="auto"/>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </frameset>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </html>
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Detected non-resource "http://localhost:1080/cgi-bin/login.pl?intro=true" in "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26574]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1102ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl" (RelFrameId=1, Internal ID=13)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1102ms: Request done "http://localhost:1080/cgi-bin/login.pl"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1103ms: Already connected [1] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1104ms: 496-byte request headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /cgi-bin/nav.pl?page=menu&in=home HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/login.pl\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1105ms: Already connected [2] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1105ms: 491-byte request headers for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /cgi-bin/login.pl?intro=true HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/login.pl\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1193ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Expires: Mon, 27 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=96\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1194ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     5ca\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1194ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1195ms: 1482-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <!DOCTYPE html\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <title>Web Tours Navigation Bar</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <body bgcolor="#E0E7F1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tH1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     N: none}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     CORATION: underline}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </style>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <BR><BR><center>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <br clear="both"/><center><A HREF="welcome.pl?page=search" TARGET="body"><IMG BORDER="0" S
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     RC="/WebTours/images/flights.gif" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ALT="Search Flights Button"/></A>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <br clear="both"/><A HREF="welcome.pl?page=itinerary" TARGET="body"><IMG BORDER="0" SRC="/
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     WebTours/images/itinerary.gif" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ALT="Itinerary Button"/></A>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <br clear="both"/><A HREF="welcome.pl?page=menus" TARGET="body"><IMG BORDER="0" SRC="/WebT
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ours/images/in_home.gif" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ALT="Home Button"/></A>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <br clear><A HREF="welcome.pl?signOff=1" TARGET="body"><IMG BORDER="0" SRC="/WebTours/imag
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     es/signoff.gif" \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ALT="SignOff Button"/></A></center>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </html>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Found resource "http://localhost:1080/WebTours/images/flights.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Found resource "http://localhost:1080/WebTours/images/itinerary.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Found resource "http://localhost:1080/WebTours/images/in_home.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Found resource "http://localhost:1080/WebTours/images/signoff.gif" in HTML "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26659]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1199ms: Already connected [3] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1199ms: 509-byte request headers for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=17)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /WebTours/images/itinerary.gif HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1201ms: Connecting [4] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1201ms: Connecting [5] to host 127.0.0.1:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1202ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1202ms: 507-byte request headers for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=16)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /WebTours/images/flights.gif HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1205ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home" (RelFrameId=1.1, Internal ID=14)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1206ms: Request done "http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1207ms: 298-byte response headers for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=16)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ETag: "2d00000004e65e-2d6-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Length: 726\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=94\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: image/gif\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1209ms: 726-byte response body for "http://localhost:1080/WebTours/images/flights.gif" (RelFrameId=, Internal ID=16)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1209ms: Request done "http://localhost:1080/WebTours/images/flights.gif"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1211ms: 228-byte response headers for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Expires: 5s\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=98\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Transfer-Encoding: chunked\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: text/html; charset=ISO-8859-1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1213ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     399\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1213ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1214ms: 921-byte chunked response body for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <!DOCTYPE html\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <title>Welcome to Web Tours</title>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </head>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <body bgcolor="#E0E7F1">\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     <p /><style>blockquote {font-family: tahoma; font-size : 10pt}H1 {font-family: tahoma; fon
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     t-size : 22pt; color: #993333}small {font-family: tahoma; font-size : 8pt}H3 {font-family:
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):      tahoma; font-size : 10pt; color: black}TD {font-family: tahoma; font-size : 10pt; color: 
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     black}</style><BR/><BR/><BR/><BR/><BR/><blockquote>Welcome, <b>petr565</b>, to the Web Tou
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     rs reservation pages.<BR/>Using the menu to the left, you can search for new flights to bo
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ok, \n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     or review/edit the flights already booked.  Don't forget to sign off when\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     you're done!\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </blockquote>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </body>\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     </html>
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1215ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/login.pl?intro=true" (RelFrameId=1.2, Internal ID=15)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     0\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1216ms: Request done "http://localhost:1080/cgi-bin/login.pl?intro=true"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1217ms: 298-byte response headers for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=17)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ETag: "1a00000004ebdb-2dd-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Length: 733\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=99\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: image/gif\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1219ms: 733-byte response body for "http://localhost:1080/WebTours/images/itinerary.gif" (RelFrameId=, Internal ID=17)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1219ms: Request done "http://localhost:1080/WebTours/images/itinerary.gif"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1221ms: Connected socket [4] from 127.0.0.1:16035 to 127.0.0.1:1080 in 20 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1221ms: 507-byte request headers for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=18)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /WebTours/images/in_home.gif HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1223ms: Connected socket [5] from 127.0.0.1:16036 to 127.0.0.1:1080 in 21 ms  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1223ms: 507-byte request headers for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=19)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     GET /WebTours/images/signoff.gif HTTP/1.1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     DNT: 1\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Encoding: gzip, deflate\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Language: ru-RU\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept: */*\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Host: localhost:1080\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     xpDate&%0A\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1225ms: 299-byte response headers for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=18)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ETag: "4c00000004ebb2-2b0-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Length: 688\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: image/gif\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1227ms: 688-byte response body for "http://localhost:1080/WebTours/images/in_home.gif" (RelFrameId=, Internal ID=18)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1227ms: Request done "http://localhost:1080/WebTours/images/in_home.gif"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1228ms: 299-byte response headers for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=19)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     HTTP/1.1 200 OK\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Server: Apache/2.2.21 (Win32)\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Last-Modified: Thu, 12 Jan 2012 13:30:28 GMT\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     ETag: "7700000004f055-2ef-4b654c0620500"\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Accept-Ranges: bytes\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Length: 751\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Keep-Alive: timeout=5, max=100\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Connection: Keep-Alive\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     Content-Type: image/gif\r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74):     \r\n
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1230ms: 751-byte response body for "http://localhost:1080/WebTours/images/signoff.gif" (RelFrameId=, Internal ID=19)
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): t=1230ms: Request done "http://localhost:1080/WebTours/images/signoff.gif"  	[MsgId: MMSG-26000]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): Registered web_reg_find successful for "Text=<blockquote>Welcome, <b>petr565</b>, to the Web Tours reservation pages." (count=1)  	[MsgId: MMSG-26364]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(74): web_submit_data("login.pl_2") was successful, 5782 body bytes, 2089 header bytes, 36 chunking overhead bytes  	[MsgId: MMSG-26385]
+C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h(91): Notify: Transaction "login" ended with a "Pass" status (Duration: 0.2782 Wasted Time: 0.0160).
+Action.c(33): Notify: Transaction "logout" started.
+Action.c(35): web_reg_find started  	[MsgId: MMSG-26355]
+Action.c(35): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(38): web_url("SignOff Button") started  	[MsgId: MMSG-26355]
+Action.c(38): t=1291ms: Already connected [0] to localhost:1080  	[MsgId: MMSG-26000]
+Action.c(38): t=1291ms: 508-byte request headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     GET /cgi-bin/welcome.pl?signOff=1 HTTP/1.1\r\n
+Action.c(38):     Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home\r\n
+Action.c(38):     DNT: 1\r\n
+Action.c(38):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(38):     Accept-Encoding: gzip, deflate\r\n
+Action.c(38):     Accept-Language: ru-RU\r\n
+Action.c(38):     Accept: */*\r\n
+Action.c(38):     Connection: Keep-Alive\r\n
+Action.c(38):     Host: localhost:1080\r\n
+Action.c(38):     Cookie: MSO=SID&1656415738; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&usern
+Action.c(38):     ame&petr565&hash&117&lastName&%7BLastName%7D%0A&address1&%7BStreetAddress%7D&creditCard&&e
+Action.c(38):     xpDate&%0A\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1359ms: 327-byte response headers for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     HTTP/1.1 200 OK\r\n
+Action.c(38):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+Action.c(38):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(38):     Set-Cookie: MSO=SID&1656415739; path=/\r\n
+Action.c(38):     Set-Cookie: MTUserInfo=; path=/; expires=Mon, 27-Jun-2022 11:28:59 GMT\r\n
+Action.c(38):     Keep-Alive: timeout=5, max=93\r\n
+Action.c(38):     Connection: Keep-Alive\r\n
+Action.c(38):     Transfer-Encoding: chunked\r\n
+Action.c(38):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1362ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     2ae\r\n
+Action.c(38): t=1362ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     \r\n
+Action.c(38): t=1363ms: 686-byte chunked response body for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     <!-- \n
+Action.c(38):      A Session ID has been created and loaded into a cookie called MSO.\n
+Action.c(38):      Also, the server options have been loaded into the cookie called\n
+Action.c(38):      MSO as well.  The server options can be set via the Admin page.\n
+Action.c(38):      --->\n
+Action.c(38):     \n
+Action.c(38):     <html>\n
+Action.c(38):     <title>Web Tours</title>\n
+Action.c(38):        <!-- Frame Set -->\n
+Action.c(38):        <frameset cols="160,*" border="1" frameborder="1">\n
+Action.c(38):           <!-- Navigation Frame -->\n
+Action.c(38):           <frame src="nav.pl?in=home" name="navbar" marginheight="2" marginwidth="2" \n
+Action.c(38):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(38):           <!-- Home Frame -->\n
+Action.c(38):           <frame src="/WebTours/home.html" name="info" marginheight="2" marginwidth="2" \n
+Action.c(38):                 noresize="noresize" scrolling="auto"/>\n
+Action.c(38):        </frameset>\n
+Action.c(38):     </html>\n
+Action.c(38):     \n
+Action.c(38):     </body>\n
+Action.c(38):     </html>
+Action.c(38): Detected non-resource "http://localhost:1080/cgi-bin/nav.pl?in=home" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(38): Detected non-resource "http://localhost:1080/WebTours/home.html" in "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26574]
+Action.c(38): Retrieving data from cache for "http://localhost:1080/WebTours/home.html"  	[MsgId: MMSG-26558]
+Action.c(38): t=1367ms: 1361-byte response body retrieved from cache for "http://localhost:1080/WebTours/home.html" (RelFrameId=1.2, Internal ID=22)
+Action.c(38):     <HTML>\n
+Action.c(38):     <HEAD>\n
+Action.c(38):     \t<title>Web Tours</title>\n
+Action.c(38):     </HEAD>\n
+Action.c(38):     <style>\n
+Action.c(38):     \tblockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(38):     \tH1 {font-family: tahoma; font-size : 22pt; color: #003366}\n
+Action.c(38):     \tsmall {font-family: tahoma; font-size : 8pt}\n
+Action.c(38):     \tH3{font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(38):     \tA {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Tahoma; TEXT-DECORATIO
+Action.c(38):     N: none}\n
+Action.c(38):     \tA:hover{ FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #993333; FONT-FAMILY: Tahoma;TEXT-DE
+Action.c(38):     CORATION: underline}\n
+Action.c(38):     \tTD {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(38):     </style>\n
+Action.c(38):     <body bgcolor="#e0e7f1">\n
+Action.c(38):     <BR/>\n
+Action.c(38):     <BR/>\n
+Action.c(38):     <BR/>\n
+Action.c(38):     <br/>\n
+Action.c(38):     <table border="0">\n
+Action.c(38):     <tr><td></td></tr>\n
+Action.c(38):     <TR><TD></TD></TR>\n
+Action.c(38):     <TR><TD>\n
+Action.c(38):     <blockquote>\n
+Action.c(38):     <H1><b>Web Tours</b></H1>\n
+Action.c(38):     Welcome to the Web Tours site.\n
+Action.c(38):     <br/>\n
+Action.c(38):     To make reservations,please enter your account information to the left.\n
+Action.c(38):     <br/>\n
+Action.c(38):     If you haven't registered yet, <A href="/cgi-bin/login.pl?username=&amp;password=&amp;getI
+Action.c(38):     nfo=true" ><B>sign up now</B></A> to get access to all our resources.\n
+Action.c(38):     <br/>\n
+Action.c(38):     To configure the server options, use <A href="/cgi-bin/admin.pl" target="body" ><b>adminis
+Action.c(38):     tration</b></A> link.\n
+Action.c(38):     <br/><br/><br/><br/><br/><br/>\n
+Action.c(38):     <br/><small>\n
+Action.c(38):     This product uses parts of the SMT Kernel, Copyright (c) 1991-99 <A href="http://www.imati
+Action.c(38):     x.com" target="new"><B><small>iMatix Corporation</small></B></A> \n
+Action.c(38):     </small>\n
+Action.c(38):     </blockquote></TD>\n
+Action.c(38):     <TD></TD></TR>\n
+Action.c(38):     </table>\n
+Action.c(38):     </body>\n
+Action.c(38):     </HTML>\n
+Action.c(38): t=1373ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/welcome.pl?signOff=1" (RelFrameId=1, Internal ID=20)
+Action.c(38):     0\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1374ms: Request done "http://localhost:1080/cgi-bin/welcome.pl?signOff=1"  	[MsgId: MMSG-26000]
+Action.c(38): t=1376ms: Already connected [1] to localhost:1080  	[MsgId: MMSG-26000]
+Action.c(38): t=1376ms: 334-byte request headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     GET /cgi-bin/nav.pl?in=home HTTP/1.1\r\n
+Action.c(38):     Referer: http://localhost:1080/cgi-bin/welcome.pl?signOff=1\r\n
+Action.c(38):     DNT: 1\r\n
+Action.c(38):     User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko\r\n
+Action.c(38):     Accept-Encoding: gzip, deflate\r\n
+Action.c(38):     Accept-Language: ru-RU\r\n
+Action.c(38):     Accept: */*\r\n
+Action.c(38):     Connection: Keep-Alive\r\n
+Action.c(38):     Host: localhost:1080\r\n
+Action.c(38):     Cookie: MSO=SID&1656415739\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1447ms: 255-byte response headers for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     HTTP/1.1 200 OK\r\n
+Action.c(38):     Date: Tue, 28 Jun 2022 11:28:59 GMT\r\n
+Action.c(38):     Server: Apache/2.2.21 (Win32)\r\n
+Action.c(38):     Expires: Mon, 27 Jun 2022 11:28:59 GMT\r\n
+Action.c(38):     Keep-Alive: timeout=5, max=95\r\n
+Action.c(38):     Connection: Keep-Alive\r\n
+Action.c(38):     Transfer-Encoding: chunked\r\n
+Action.c(38):     Content-Type: text/html; charset=ISO-8859-1\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1448ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     5d2\r\n
+Action.c(38): t=1449ms: 2-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     \r\n
+Action.c(38): t=1450ms: 1490-byte chunked response body for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     <!DOCTYPE html\n
+Action.c(38):     \tPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n
+Action.c(38):     \t "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\n
+Action.c(38):     <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">\n
+Action.c(38):     <head>\n
+Action.c(38):     <title>Web Tours Navigation Bar</title>\n
+Action.c(38):     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />\n
+Action.c(38):     </head>\n
+Action.c(38):     <body bgcolor="#E0E7F1">\n
+Action.c(38):     <style>\n
+Action.c(38):     blockquote {font-family: tahoma; font-size : 10pt}\n
+Action.c(38):     H1 {font-family: tahoma; font-size : 22pt; color: #993333}\n
+Action.c(38):     H3 {font-family: tahoma; font-size : 10pt; color: black}\n
+Action.c(38):     small {font-family: tahoma; font-size : 8pt}\n
+Action.c(38):     </style>\n
+Action.c(38):     <form method="post" action="/cgi-bin/login.pl" target="body">\n
+Action.c(38):     <input type="hidden" name="userSession" value="134177.054597003zQAVHDcpctfiDDDDtVtVApDQDtH
+Action.c(38):     f"/>\n
+Action.c(38):     <table border="0"><tr><td>&nbsp;</td>\n
+Action.c(38):     <td>&nbsp;</td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td>&nbsp;</td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td><small>&nbsp;Username</small></td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td><input type="text" name="username" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td><small>&nbsp;Password</small></td>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td><input type="password" name="password" value="" size="14" maxlength="14"/></td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td>&nbsp;</td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td>\n
+Action.c(38):     <td><input type="image" name="login" value="Login" alt="Login" border="1" \n
+Action.c(38):     src="/WebTours/images/mer_login.gif"/></td></tr>\n
+Action.c(38):     <tr><td>&nbsp;</td><td>&nbsp;</td></tr>\n
+Action.c(38):     </table><input type="hidden" name="JSFormSubmit" value="off"/>\n
+Action.c(38):     </form>\n
+Action.c(38):     \n
+Action.c(38):     </body>\n
+Action.c(38):     </html>\n
+Action.c(38): Resource "http://localhost:1080/WebTours/images/mer_login.gif" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(38): t=1455ms: 5-byte chunked response overhead for "http://localhost:1080/cgi-bin/nav.pl?in=home" (RelFrameId=1.1, Internal ID=21)
+Action.c(38):     0\r\n
+Action.c(38):     \r\n
+Action.c(38): t=1455ms: Request done "http://localhost:1080/cgi-bin/nav.pl?in=home"  	[MsgId: MMSG-26000]
+Action.c(38): Registered web_reg_find successful for "Text=Web Tours" (count=5)  	[MsgId: MMSG-26364]
+Action.c(38): web_url("SignOff Button") was successful, 2176 body bytes, 582 header bytes, 24 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(48): Notify: Transaction "logout" ended with a "Pass" status (Duration: 0,2060 Wasted Time: 0,0070).
+Action.c(50): Notify: Transaction "UC02_Login" ended with a "Pass" status (Duration: 1,1624 Wasted Time: 0,2064).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+t=1940ms: Closed connection [0] to localhost:1080 after completing 8 request(s)  	[MsgId: MMSG-26000]
+t=1940ms: Closed connection [1] to localhost:1080 after completing 6 request(s)  	[MsgId: MMSG-26000]
+t=1941ms: Closed connection [2] to localhost:1080 after completing 3 request(s)  	[MsgId: MMSG-26000]
+t=1941ms: Closed connection [3] to localhost:1080 after completing 2 request(s)  	[MsgId: MMSG-26000]
+t=1941ms: Closed connection [4] to localhost:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
+t=1941ms: Closed connection [5] to localhost:1080 after completing 1 request(s)  	[MsgId: MMSG-26000]
