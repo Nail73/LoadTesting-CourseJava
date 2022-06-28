@@ -7,7 +7,7 @@
 #include "web_api.h"
 #include "lrw_custom_body.h"
 #include <string.h>
-#include "C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Скрипты\common_lib.h"
+#include "..\Parametres\common_lib.h"
 
 //--------------------------------------------------------------------
 // Global Variables

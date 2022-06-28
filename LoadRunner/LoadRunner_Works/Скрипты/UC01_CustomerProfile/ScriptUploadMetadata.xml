@@ -22,6 +22,12 @@
     <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv8oN.161.log" Filter="1" />
+    <FileEntry Name="mdrvkml.753.log" Filter="1" />
+    <FileEntry Name="mdrvPRB.419.log" Filter="1" />
+    <FileEntry Name="mdrvSFs.305.log" Filter="1" />
+    <FileEntry Name="mdrvuKS.927.log" Filter="1" />
+    <FileEntry Name="mdrvv2Q.541.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />

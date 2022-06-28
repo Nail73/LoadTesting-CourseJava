@@ -2584,7 +2584,7 @@ void
 
 # 8 "globals.h" 2
 
-# 1 "C:\\Users\\\303\363\353\374\355\340\360\340\\Desktop\\LoadRunner\\LoadRunner_Works\\\321\352\360\350\357\362\373\\common_lib.h" 1
+# 1 "..\\Parametres\\common_lib.h" 1
 homePage(){
 	lr_start_transaction("homePage");
 
