@@ -2742,6 +2742,25 @@ homePage(){
 	
 	return 0;
 }
+clickToRegProfile(){
+lr_start_transaction("clickToRegProfile");
+	
+	web_reg_find("Text=First time registering?", "LAST");
+
+	web_url("sign up now", 
+		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/WebTours/home.html", 
+		"Snapshot=t4.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_end_transaction("clickToRegProfile",2);
+	
+	return 0;
+}
 
 regProfile(){
 	lr_start_transaction("regProfile");
@@ -2828,21 +2847,7 @@ Action()
 	
 	homePage();
 
-	lr_start_transaction("clickToRegProfile");
-	
-	web_reg_find("Text=First time registering?", "LAST");
-
-	web_url("sign up now", 
-		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
-		"LAST");
-
-	lr_end_transaction("clickToRegProfile",2);
+	clickToRegProfile();
 
 	lr_think_time(5);
 

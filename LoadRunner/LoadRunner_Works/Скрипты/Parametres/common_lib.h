@@ -35,32 +35,28 @@ homePage(){
 	return 0;
 }
 
-regProfile(){
-	lr_start_transaction("regProfile");
-	
-		web_reg_find("Text/IC=<blockquote>Thank you, <b>{Username}</b>, for registering and welcome",LAST);
+clickToRegProfile()
+{
 
-		web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
-		"Method=POST", 
-		"TargetFrame=info", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t3.inf", 
-		"Mode=HTML", 
-		ITEMDATA, 
-		"Name=username", "Value={Username}", ENDITEM, 
-		"Name=password", "Value={Password}", ENDITEM, 
-		"Name=passwordConfirm", "Value={Password}", ENDITEM, 
-		"Name=firstName", "Value={FirstName}", ENDITEM, 
-		"Name=lastName", "Value={LastName}", ENDITEM, 
-		"Name=address1", "Value={StreetAddress}", ENDITEM, 
-		"Name=address2", "Value={City}", ENDITEM, 
-		"Name=register.x", "Value=34", ENDITEM, 
-		"Name=register.y", "Value=5", ENDITEM, 
+	lr_start_transaction("clickToRegProfile");
+	
+	web_reg_find("Text=First time registering?",
 		LAST);
 	
-	lr_end_transaction("regProfile",LR_AUTO);
+	web_add_header("DNT", 
+		"1");
+
+	web_url("login.pl", 
+		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
+		"TargetFrame=", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/WebTours/home.html", 
+		"Snapshot=t2.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	lr_end_transaction("clickToRegProfile",LR_AUTO);
 	
 	return 0;
 }
@@ -89,6 +85,27 @@ lr_start_transaction("login");
 		LAST);
 
 	lr_end_transaction("login",LR_AUTO);
+	
+	return 0;
+	}
+	
+	logout(){
+		lr_start_transaction("logout");
+	
+	web_reg_find("Text=Web Tours",
+		LAST);
+
+	web_url("SignOff Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		LAST);
+
+	lr_end_transaction("logout",LR_AUTO);
 	
 	return 0;
 	}

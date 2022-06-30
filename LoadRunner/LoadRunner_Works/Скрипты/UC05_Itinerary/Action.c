@@ -5,28 +5,6 @@ Action()
 	
 	homePage();
 
-	lr_start_transaction("clickToRegProfile");
-	
-	web_reg_find("Text=First time registering?", LAST);
-
-	web_url("sign up now", 
-		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
-		LAST);
-
-	lr_end_transaction("clickToRegProfile",LR_AUTO);
-
-	lr_think_time(5);
-
-	regProfile();
-	
-	lr_think_time(5);
-
 	login();
 	
 	lr_think_time(5);

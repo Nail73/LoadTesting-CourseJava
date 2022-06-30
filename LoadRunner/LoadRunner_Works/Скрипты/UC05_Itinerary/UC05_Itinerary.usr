@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC05_Itinerary__*delimiter*__clickToRegProfile__*delimiter*__clickItinerary"
+Order="UC05_Itinerary__*delimiter*__clickItinerary"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -60,5 +60,4 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 UC05_Itinerary=
-clickToRegProfile=
 clickItinerary=

@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC04_DeleteTickets__*delimiter*__clickToRegProfile__*delimiter*__clickItinerary__*delimiter*__deleteTicket"
+Order="UC04_DeleteTickets__*delimiter*__clickItinerary__*delimiter*__deleteTicket"
 [StateManagement]
 LastReplayStatus=2
 [ActiveReplay]
@@ -60,6 +60,5 @@ LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
 UC04_DeleteTickets=
-clickToRegProfile=
 clickItinerary=
 deleteTicket=

@@ -8,26 +8,6 @@ Action()
 
 	homePage();
 
-	lr_start_transaction("clickToRegProfile");
-	
-	web_reg_find("Text=First time registering?", LAST);
-
-	web_url("sign up now", 
-		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
-		LAST);
-
-	lr_end_transaction("clickToRegProfile",LR_AUTO);
-
-	lr_think_time(5);
-
-	regProfile();
-	
 	lr_think_time(5);
 
 	login();
@@ -53,9 +33,8 @@ Action()
 
 	lr_think_time(5);
 
-	lr_start_transaction("buyTicket");
+	lr_start_transaction("searchTicket");
 	
-
 /*Correlation comment - Do not change!  Original value='020;338;06/25/2022' Name ='outboundFlight_1' Type ='ResponseBased'*/
 	web_reg_save_param_attrib(
 		"ParamName=outboundFlight",
@@ -103,7 +82,7 @@ Action()
      FlightVal = lr_paramarr_idx("outFlightVal", arrSize); 
      FlightVal = lr_paramarr_random("outFlightVal");
      
- 	lr_end_transaction("buyTicket",LR_AUTO);
+ 	lr_end_transaction("searchTicket",LR_AUTO);
 	
 	lr_start_transaction("departureTime");
 
@@ -184,6 +163,10 @@ Action()
 		LAST);
 
 	lr_end_transaction("bookAnother",LR_AUTO);
+	
+	lr_think_time(5);
+
+	logout();
 	
 	lr_end_transaction("UC03_BuyTickets",LR_AUTO);
 
