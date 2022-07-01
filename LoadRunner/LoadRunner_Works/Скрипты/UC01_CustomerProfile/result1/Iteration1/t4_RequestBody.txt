@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 "username=jojo140533&password=bean&passwordConfirm=bean&firstName=Jojo&lastName=Bean&address1=P"
 "ushkina&address2=Value&register.x=34&register.y=5"
+=======
+"username=jojo140533&password=bean&passwordConfirm=bean&firstName=Jojo&lastName=Bean&address1=P"
+"ushkina&address2=Value&register.x=34&register.y=5"
+>>>>>>> 32ac712d1d8db92f181522dcbdf1d5b5637a0702

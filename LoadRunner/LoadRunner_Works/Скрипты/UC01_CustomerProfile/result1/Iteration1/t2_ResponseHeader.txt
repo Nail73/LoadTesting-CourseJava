@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 HTTP/1.1 200 OK
 Date: Fri, 01 Jul 2022 10:05:28 GMT
 Server: Apache/2.2.21 (Win32)
@@ -9,3 +10,16 @@ Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 Content-Type: text/html
 
+=======
+HTTP/1.1 200 OK
+Date: Fri, 01 Jul 2022 10:05:28 GMT
+Server: Apache/2.2.21 (Win32)
+Last-Modified: Mon, 27 May 2013 11:20:22 GMT
+ETag: "6200000004f10c-16e-4ddb1559ac980"
+Accept-Ranges: bytes
+Content-Length: 366
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html
+
+>>>>>>> 32ac712d1d8db92f181522dcbdf1d5b5637a0702
