@@ -144,25 +144,21 @@ Action()
 		LAST);
 		lr_end_transaction("paymentDetails",LR_AUTO);
 	
-		
-	lr_end_transaction("paymentDetails",LR_AUTO);
+	lr_start_transaction("clickItinerary");
 	
-	lr_start_transaction("bookAnother");
+	web_reg_find("Text=Itinerary Button",LAST);
 
-	web_submit_data("reservations.pl_4", 
-		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
+	web_url("Itinerary Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
+		"TargetFrame=body", 
+		"Resource=0", 
 		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/reservations.pl", 
-		"Snapshot=t23.inf", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t3.inf", 
 		"Mode=HTML", 
-		ITEMDATA, 
-		"Name=Book Another.x", "Value=24", ENDITEM, 
-		"Name=Book Another.y", "Value=10", ENDITEM, 
 		LAST);
 
-	lr_end_transaction("bookAnother",LR_AUTO);
+	lr_end_transaction("clickItinerary",LR_AUTO);
 	
 	lr_think_time(5);
 

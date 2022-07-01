@@ -15,7 +15,7 @@ Action()
 
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=Itinerary",LAST);
+	web_reg_find("Text=Itinerary Button",LAST);
 
 	web_reg_save_param("c_flightids",
     "lb=<input type=\"hidden\" name=\"flightID\" value=\"",

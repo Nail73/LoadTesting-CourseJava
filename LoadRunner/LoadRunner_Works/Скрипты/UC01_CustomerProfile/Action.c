@@ -40,7 +40,11 @@ Action()
 
 	lr_start_transaction("saveProfile");
 	
-	web_reg_find("Text/IC=<blockquote>Welcome, <b>{Username}{RandomLetter}</b>, to the Web Tours reservation pages.",LAST);
+	web_reg_find("Text=Welcome",
+		LAST);
+
+	
+	//web_reg_find("Text/IC=<blockquote>Welcome, <b>{Username}{RandomLetter}</b>, to the Web Tours reservation pages.",LAST);
 
 		web_url("button_next.gif", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 

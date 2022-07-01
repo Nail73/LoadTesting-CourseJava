@@ -52,7 +52,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="UC03_BuyTickets__*delimiter*__clickToFlights__*delimiter*__searchTicket__*delimiter*__departureTime__*delimiter*__paymentDetails__*delimiter*__bookAnother"
+Order="UC03_BuyTickets__*delimiter*__clickToFlights__*delimiter*__searchTicket__*delimiter*__departureTime__*delimiter*__paymentDetails__*delimiter*__clickItinerary"
 [StateManagement]
 LastReplayStatus=2
 [ActiveReplay]
@@ -64,4 +64,4 @@ clickToFlights=
 searchTicket=
 departureTime=
 paymentDetails=
-bookAnother=
+clickItinerary=

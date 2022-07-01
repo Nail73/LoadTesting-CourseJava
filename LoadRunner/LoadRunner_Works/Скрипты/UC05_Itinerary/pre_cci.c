@@ -2621,52 +2621,29 @@ homePage(){
 	
 	return 0;
 }
-clickToRegProfile(){
-lr_start_transaction("clickToRegProfile");
-	
-	web_reg_find("Text=First time registering?", "LAST");
 
-	web_url("sign up now", 
+clickToRegProfile()
+{
+
+	lr_start_transaction("clickToRegProfile");
+	
+	web_reg_find("Text=First time registering?",
+		"LAST");
+	
+	web_add_header("DNT", 
+		"1");
+
+	web_url("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"TargetFrame=body", 
+		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t4.inf", 
+		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		"LAST");
 
 	lr_end_transaction("clickToRegProfile",2);
-	
-	return 0;
-}
-
-regProfile(){
-	lr_start_transaction("regProfile");
-	
-		web_reg_find("Text/IC=<blockquote>Thank you, <b>{Username}</b>, for registering and welcome","LAST");
-
-		web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
-		"Method=POST", 
-		"TargetFrame=info", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t3.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=username", "Value={Username}", "ENDITEM", 
-		"Name=password", "Value={Password}", "ENDITEM", 
-		"Name=passwordConfirm", "Value={Password}", "ENDITEM", 
-		"Name=firstName", "Value={FirstName}", "ENDITEM", 
-		"Name=lastName", "Value={LastName}", "ENDITEM", 
-		"Name=address1", "Value={StreetAddress}", "ENDITEM", 
-		"Name=address2", "Value={City}", "ENDITEM", 
-		"Name=register.x", "Value=34", "ENDITEM", 
-		"Name=register.y", "Value=5", "ENDITEM", 
-		"LAST");
-	
-	lr_end_transaction("regProfile",2);
 	
 	return 0;
 }
@@ -2699,6 +2676,27 @@ lr_start_transaction("login");
 	return 0;
 	}
 	
+	logout(){
+		lr_start_transaction("logout");
+	
+	web_reg_find("Text=Web Tours",
+		"LAST");
+
+	web_url("SignOff Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_end_transaction("logout",2);
+	
+	return 0;
+	}
+	
 # 9 "globals.h" 2
 
  
@@ -2722,21 +2720,13 @@ Action()
 	
 	homePage();
 
-	clickToRegProfile();
-
-	lr_think_time(5);
-
-	regProfile();
-	
-	lr_think_time(5);
-
 	login();
 	
 	lr_think_time(5);
 
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=Itinerary","LAST");
+	web_reg_find("Text=Itinerary Button","LAST");
 
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 

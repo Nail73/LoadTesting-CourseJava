@@ -11,7 +11,7 @@ Action()
 
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=Itinerary",LAST);
+	web_reg_find("Text=Itinerary Button",LAST);
 
 	web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
