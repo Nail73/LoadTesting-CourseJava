@@ -2621,52 +2621,33 @@ homePage(){
 	
 	return 0;
 }
-clickToRegProfile(){
-lr_start_transaction("clickToRegProfile");
-	
-	web_reg_find("Text=First time registering?", "LAST");
 
-	web_url("sign up now", 
+clickToRegProfile()
+{
+
+	lr_start_transaction("clickToRegProfile");
+	
+	web_reg_find("Text=First time registering?",
+		"LAST");
+		
+	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
+	
+	lr_save_string(lr_eval_string("{Password}"),"Pass");
+	
+	web_add_header("DNT", 
+		"1");
+
+	web_url("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
 		"TargetFrame=body", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/home.html", 
-		"Snapshot=t4.inf", 
+		"Snapshot=t2.inf", 
 		"Mode=HTML", 
 		"LAST");
 
 	lr_end_transaction("clickToRegProfile",2);
-	
-	return 0;
-}
-
-regProfile(){
-	lr_start_transaction("regProfile");
-	
-		web_reg_find("Text/IC=<blockquote>Thank you, <b>{Username}</b>, for registering and welcome","LAST");
-
-		web_submit_data("login.pl", 
-		"Action=http://localhost:1080/cgi-bin/login.pl", 
-		"Method=POST", 
-		"TargetFrame=info", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"Snapshot=t3.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=username", "Value={Username}", "ENDITEM", 
-		"Name=password", "Value={Password}", "ENDITEM", 
-		"Name=passwordConfirm", "Value={Password}", "ENDITEM", 
-		"Name=firstName", "Value={FirstName}", "ENDITEM", 
-		"Name=lastName", "Value={LastName}", "ENDITEM", 
-		"Name=address1", "Value={StreetAddress}", "ENDITEM", 
-		"Name=address2", "Value={City}", "ENDITEM", 
-		"Name=register.x", "Value=34", "ENDITEM", 
-		"Name=register.y", "Value=5", "ENDITEM", 
-		"LAST");
-	
-	lr_end_transaction("regProfile",2);
 	
 	return 0;
 }
@@ -2699,6 +2680,27 @@ lr_start_transaction("login");
 	return 0;
 	}
 	
+	logout(){
+		lr_start_transaction("logout");
+	
+	web_reg_find("Text=Web Tours",
+		"LAST");
+
+	web_url("SignOff Button", 
+		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
+		"TargetFrame=body", 
+		"Resource=0", 
+		"RecContentType=text/html", 
+		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
+		"Snapshot=t7.inf", 
+		"Mode=HTML", 
+		"LAST");
+
+	lr_end_transaction("logout",2);
+	
+	return 0;
+	}
+	
 # 9 "globals.h" 2
 
  
@@ -2716,19 +2718,12 @@ vuser_init()
 
 # 1 "Action.c" 1
 Action()
-{
-
+{ 
+	int arrSize;
+    char * FlightVal;
 	lr_start_transaction("UC06_SearchTicket");
 	
 	homePage();
-
-	clickToRegProfile();
-
-	lr_think_time(5);
-
-	regProfile();
-
-	lr_think_time(5);
 
 	login();
 
@@ -2753,25 +2748,30 @@ Action()
 	lr_think_time(28);
 
 	lr_start_transaction("searchTicket");
-
+	
  
 	web_reg_save_param_attrib(
 		"ParamName=outboundFlight",
 		"TagName=input",
 		"Extract=value",
 		"Name=outboundFlight",
+		"Ordinal=ALL",
 		"Type=radio",
 		"SEARCH_FILTERS",
 		"IgnoreRedirections=No",
 		"LAST");
-
+		
+	web_reg_find("Text/IC=<blockquote>Flight departing from <B>{Town}</B> to <B>{Town2}</B> on <B>{DepartDate}</B>","LAST");
+		
+	web_reg_save_param("outFlightVal", "LB=outboundFlight\" value=\"", "RB=\"", "ORD=ALL", "LAST" ); 
+		
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t6.inf", 
+		"Snapshot=t16.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
 		"Name=advanceDiscount", "Value=0", "ENDITEM", 
@@ -2779,21 +2779,25 @@ Action()
 		"Name=departDate", "Value={DepartDate}", "ENDITEM", 
 		"Name=arrive", "Value={Town2}", "ENDITEM", 
 		"Name=returnDate", "Value={ReturnDate}", "ENDITEM", 
-		"Name=numPassengers", "Value=1", "ENDITEM", 
+		"Name=numPassengers", "Value={NumPassengers}", "ENDITEM", 
 		"Name=seatPref", "Value={SeatingPreference}", "ENDITEM", 
 		"Name=seatType", "Value={TypeOfSeat}", "ENDITEM", 
 		"Name=.cgifields", "Value=roundtrip", "ENDITEM", 
 		"Name=.cgifields", "Value=seatType", "ENDITEM", 
 		"Name=.cgifields", "Value=seatPref", "ENDITEM", 
-		"Name=findFlights.x", "Value=66", "ENDITEM", 
-		"Name=findFlights.y", "Value=10", "ENDITEM", 
+		"Name=findFlights.x", "Value=38", "ENDITEM", 
+		"Name=findFlights.y", "Value=6", "ENDITEM", 
 		"LAST");
-
-	lr_end_transaction("searchTicket",2);
-
-	lr_think_time(32);
-
+		
+     arrSize = lr_paramarr_len("outFlightVal");
+     FlightVal = lr_paramarr_random("outFlightVal");
+     lr_save_string(FlightVal, "FlightVal");
+     
+ 	lr_end_transaction("searchTicket",2);
+	
 	lr_start_transaction("departureTime");
+	
+	web_reg_find("Text=Flight Reservation","LAST");
 
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",
@@ -2801,39 +2805,24 @@ Action()
 		"TargetFrame=",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
-		"Snapshot=t7.inf",
+		"Snapshot=t17.inf",
 		"Mode=HTML",
 		"ITEMDATA",
-		"Name=outboundFlight", "Value={outboundFlight}", "ENDITEM",
-		"Name=numPassengers", "Value=1", "ENDITEM",
+		"Name=outboundFlight", "Value={FlightVal}", "ENDITEM",
+		"Name=numPassengers", "Value={NumPassengers}", "ENDITEM",
 		"Name=advanceDiscount", "Value=0", "ENDITEM",
-		"Name=seatType", "Value={SeatingPreference}", "ENDITEM",
-		"Name=seatPref", "Value={TypeOfSeat}", "ENDITEM",
-		"Name=reserveFlights.x", "Value=25", "ENDITEM",
-		"Name=reserveFlights.y", "Value=7", "ENDITEM",
+		"Name=seatType", "Value={TypeOfSeat}", "ENDITEM",
+		"Name=seatPref", "Value={SeatingPreference}", "ENDITEM",
+		"Name=reserveFlights.x", "Value=47", "ENDITEM",
+		"Name=reserveFlights.y", "Value=12", "ENDITEM",
 		"LAST");
-
+	
 	lr_end_transaction("departureTime",2);
 	
 	lr_think_time(5);
 
-	lr_start_transaction("logout");
-	
-	web_reg_find("Text=Web Tours",
-		"LAST");
-
-	web_url("SignOff Button", 
-		"URL=http://localhost:1080/cgi-bin/welcome.pl?signOff=1", 
-		"TargetFrame=body", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t7.inf", 
-		"Mode=HTML", 
-		"LAST");
-
-	lr_end_transaction("logout",2);
-	
+	logout();
+		
 	lr_end_transaction("UC06_SearchTicket",2);
 
 	return 0;

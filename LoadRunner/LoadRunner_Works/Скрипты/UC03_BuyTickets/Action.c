@@ -49,9 +49,7 @@ Action()
 		
 	web_reg_find("Text/IC=<blockquote>Flight departing from <B>{Town}</B> to <B>{Town2}</B> on <B>{DepartDate}</B>",LAST);
 		
-	web_set_max_html_param_len("4294967295");
-	
-	web_reg_save_param("outFlightVal", "LB=outboundFlight value=", "RB=>", "ORD=ALL", "SaveLen=18", LAST ); 
+	web_reg_save_param("outFlightVal", "LB=outboundFlight\" value=\"", "RB=\"", "ORD=ALL", LAST ); 
 		
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
@@ -78,13 +76,14 @@ Action()
 		LAST);
 		
      arrSize = lr_paramarr_len("outFlightVal");
-
-     FlightVal = lr_paramarr_idx("outFlightVal", arrSize); 
      FlightVal = lr_paramarr_random("outFlightVal");
+     lr_save_string(FlightVal, "FlightVal");
      
  	lr_end_transaction("searchTicket",LR_AUTO);
 	
 	lr_start_transaction("departureTime");
+	
+	web_reg_find("Text=Flight Reservation",LAST);
 
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",

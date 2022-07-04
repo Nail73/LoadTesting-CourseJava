@@ -54,7 +54,7 @@ vuser_end=cci
 [TransactionsOrder]
 Order="UC04_DeleteTickets__*delimiter*__clickItinerary__*delimiter*__deleteTicket"
 [StateManagement]
-LastReplayStatus=2
+LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1

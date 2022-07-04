@@ -16,6 +16,14 @@
     <FileEntry Name="combined_UC05_Itinerary.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="156839295440.idx" Filter="1" />
+    <FileEntry Name="15683929544_B2L.477.idx" Filter="1" />
+    <FileEntry Name="15683929544_Gg2.191.idx" Filter="1" />
+    <FileEntry Name="15683929544_je7.149.idx" Filter="1" />
+    <FileEntry Name="15683929544_n0j.923.idx" Filter="1" />
+    <FileEntry Name="15683929544_QdI.601.idx" Filter="1" />
+    <FileEntry Name="15683929544_QJe.459.idx" Filter="1" />
+    <FileEntry Name="15683929544_wCk.775.idx" Filter="1" />
+    <FileEntry Name="15683929544_Y0l.363.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -28,6 +36,7 @@
     <FileEntry Name="mdrv9gF.77.log" Filter="1" />
     <FileEntry Name="mdrvAxj.237.log" Filter="1" />
     <FileEntry Name="mdrvEhH.67.log" Filter="1" />
+    <FileEntry Name="mdrvFCd.635.log" Filter="1" />
     <FileEntry Name="mdrvFYk.51.log" Filter="1" />
     <FileEntry Name="mdrvHwF.383.log" Filter="1" />
     <FileEntry Name="mdrviUS.537.log" Filter="1" />
@@ -39,8 +48,11 @@
     <FileEntry Name="mdrvoTo.825.log" Filter="1" />
     <FileEntry Name="mdrvp1U.675.log" Filter="1" />
     <FileEntry Name="mdrvQ0G.987.log" Filter="1" />
+    <FileEntry Name="mdrvqq1.99.log" Filter="1" />
+    <FileEntry Name="mdrvR7W.839.log" Filter="1" />
     <FileEntry Name="mdrvrgQ.231.log" Filter="1" />
     <FileEntry Name="mdrvskQ.747.log" Filter="1" />
+    <FileEntry Name="mdrvwYC.99.log" Filter="1" />
     <FileEntry Name="mdrvX1e.509.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />

@@ -1,6 +1,5 @@
-POST /cgi-bin/login.pl HTTP/1.1
-Content-Type: application/x-www-form-urlencoded
-Referer: http://localhost:1080/cgi-bin/nav.pl?in=home
+GET /cgi-bin/welcome.pl?page=itinerary HTTP/1.1
+Referer: http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home
 DNT: 1
 User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
 Accept-Encoding: gzip, deflate
@@ -8,6 +7,5 @@ Accept-Language: ru-RU
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1656514026; MTUserInfo=firstName&%7BFirstName%7D&address2&%7BCity%7D&username&masha484&hash&52&lastName&%7BLastName%7D&address1&%7BStreetAddress%7D&creditCard&&expDate&
-Content-Length: 120
+Cookie: MSO=SID&1656948846; MTUserInfo=firstName&Sergei&address2&Ottava&username&sergei5646&hash&54&lastName&Sergeev%0A&address1&Stepnaya&creditCard&&expDate&%0A
 

@@ -2629,13 +2629,17 @@ clickToRegProfile()
 	
 	web_reg_find("Text=First time registering?",
 		"LAST");
+		
+	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
+	
+	lr_save_string(lr_eval_string("{Password}"),"Pass");
 	
 	web_add_header("DNT", 
 		"1");
 
 	web_url("login.pl", 
 		"URL=http://localhost:1080/cgi-bin/login.pl?username=&password=&getInfo=true", 
-		"TargetFrame=", 
+		"TargetFrame=body", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/WebTours/home.html", 

@@ -1,6 +1,7 @@
 Action()
-{
-
+{ 
+	int arrSize;
+    char * FlightVal;
 	lr_start_transaction("UC06_SearchTicket");
 	
 	homePage();
@@ -28,25 +29,30 @@ Action()
 	lr_think_time(28);
 
 	lr_start_transaction("searchTicket");
-
-/*Correlation comment - Do not change!  Original value='032;446;06/30/2022' Name ='outboundFlight' Type ='ResponseBased'*/
+	
+/*Correlation comment - Do not change!  Original value='020;338;06/25/2022' Name ='outboundFlight_1' Type ='ResponseBased'*/
 	web_reg_save_param_attrib(
 		"ParamName=outboundFlight",
 		"TagName=input",
 		"Extract=value",
 		"Name=outboundFlight",
+		"Ordinal=ALL",
 		"Type=radio",
 		SEARCH_FILTERS,
 		"IgnoreRedirections=No",
 		LAST);
-
+		
+	web_reg_find("Text/IC=<blockquote>Flight departing from <B>{Town}</B> to <B>{Town2}</B> on <B>{DepartDate}</B>",LAST);
+		
+	web_reg_save_param("outFlightVal", "LB=outboundFlight\" value=\"", "RB=\"", "ORD=ALL", LAST ); 
+		
 	web_submit_data("reservations.pl", 
 		"Action=http://localhost:1080/cgi-bin/reservations.pl", 
 		"Method=POST", 
 		"TargetFrame=", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl?page=welcome", 
-		"Snapshot=t6.inf", 
+		"Snapshot=t16.inf", 
 		"Mode=HTML", 
 		ITEMDATA, 
 		"Name=advanceDiscount", "Value=0", ENDITEM, 
@@ -54,21 +60,25 @@ Action()
 		"Name=departDate", "Value={DepartDate}", ENDITEM, 
 		"Name=arrive", "Value={Town2}", ENDITEM, 
 		"Name=returnDate", "Value={ReturnDate}", ENDITEM, 
-		"Name=numPassengers", "Value=1", ENDITEM, 
+		"Name=numPassengers", "Value={NumPassengers}", ENDITEM, 
 		"Name=seatPref", "Value={SeatingPreference}", ENDITEM, 
 		"Name=seatType", "Value={TypeOfSeat}", ENDITEM, 
 		"Name=.cgifields", "Value=roundtrip", ENDITEM, 
 		"Name=.cgifields", "Value=seatType", ENDITEM, 
 		"Name=.cgifields", "Value=seatPref", ENDITEM, 
-		"Name=findFlights.x", "Value=66", ENDITEM, 
-		"Name=findFlights.y", "Value=10", ENDITEM, 
+		"Name=findFlights.x", "Value=38", ENDITEM, 
+		"Name=findFlights.y", "Value=6", ENDITEM, 
 		LAST);
-
-	lr_end_transaction("searchTicket",LR_AUTO);
-
-	lr_think_time(32);
-
+		
+     arrSize = lr_paramarr_len("outFlightVal");
+     FlightVal = lr_paramarr_random("outFlightVal");
+     lr_save_string(FlightVal, "FlightVal");
+     
+ 	lr_end_transaction("searchTicket",LR_AUTO);
+	
 	lr_start_transaction("departureTime");
+	
+	web_reg_find("Text=Flight Reservation",LAST);
 
 	web_submit_data("reservations.pl_2",
 		"Action=http://localhost:1080/cgi-bin/reservations.pl",
@@ -76,18 +86,18 @@ Action()
 		"TargetFrame=",
 		"RecContentType=text/html",
 		"Referer=http://localhost:1080/cgi-bin/reservations.pl",
-		"Snapshot=t7.inf",
+		"Snapshot=t17.inf",
 		"Mode=HTML",
 		ITEMDATA,
-		"Name=outboundFlight", "Value={outboundFlight}", ENDITEM,
-		"Name=numPassengers", "Value=1", ENDITEM,
+		"Name=outboundFlight", "Value={FlightVal}", ENDITEM,
+		"Name=numPassengers", "Value={NumPassengers}", ENDITEM,
 		"Name=advanceDiscount", "Value=0", ENDITEM,
-		"Name=seatType", "Value={SeatingPreference}", ENDITEM,
-		"Name=seatPref", "Value={TypeOfSeat}", ENDITEM,
-		"Name=reserveFlights.x", "Value=25", ENDITEM,
-		"Name=reserveFlights.y", "Value=7", ENDITEM,
+		"Name=seatType", "Value={TypeOfSeat}", ENDITEM,
+		"Name=seatPref", "Value={SeatingPreference}", ENDITEM,
+		"Name=reserveFlights.x", "Value=47", ENDITEM,
+		"Name=reserveFlights.y", "Value=12", ENDITEM,
 		LAST);
-
+	
 	lr_end_transaction("departureTime",LR_AUTO);
 	
 	lr_think_time(5);

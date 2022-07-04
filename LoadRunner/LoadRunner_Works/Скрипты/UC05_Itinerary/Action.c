@@ -11,17 +11,18 @@ Action()
 
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=Itinerary Button",LAST);
-
-	web_url("Itinerary Button", 
+	web_reg_find("Text=Flights List",LAST);
+	
+	web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
-		"TargetFrame=body", 
+		"TargetFrame=", 
 		"Resource=0", 
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
-		"Snapshot=t3.inf", 
+		"Snapshot=t4.inf", 
 		"Mode=HTML", 
 		LAST);
+
 
 	lr_end_transaction("clickItinerary",LR_AUTO);
 	

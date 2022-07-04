@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 HTTP/1.1 200 OK
-Date: Fri, 01 Jul 2022 10:05:28 GMT
+Date: Mon, 04 Jul 2022 13:51:29 GMT
 Server: Apache/2.2.21 (Win32)
 Expires: 5s
 Keep-Alive: timeout=5, max=97
@@ -8,14 +7,3 @@ Connection: Keep-Alive
 Transfer-Encoding: chunked
 Content-Type: text/html; charset=ISO-8859-1
 
-=======
-HTTP/1.1 200 OK
-Date: Fri, 01 Jul 2022 10:05:28 GMT
-Server: Apache/2.2.21 (Win32)
-Expires: 5s
-Keep-Alive: timeout=5, max=97
-Connection: Keep-Alive
-Transfer-Encoding: chunked
-Content-Type: text/html; charset=ISO-8859-1
-
->>>>>>> 32ac712d1d8db92f181522dcbdf1d5b5637a0702

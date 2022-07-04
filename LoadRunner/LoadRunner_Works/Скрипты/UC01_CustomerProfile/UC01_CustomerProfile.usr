@@ -62,3 +62,9 @@ ActiveRunName=result1
 UC01_CustomerProfile=
 regProfile=
 saveProfile=
+[ParameterSimulation]
+NumVusers=2
+IsDurationIndefinite=0
+NumIterationsUntilCompletion=1
+IterationFromRTS=0
+NumIterationIndefinitely=1

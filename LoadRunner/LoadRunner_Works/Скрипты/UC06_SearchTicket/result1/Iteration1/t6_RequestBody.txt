@@ -1,0 +1,3 @@
+"advanceDiscount=0&depart=London&departDate=07%2F05%2F2022&arrive=San+Francisco&returnDate=07%2"
+"F09%2F2022&numPassengers=%7BNumPassengers%7D&seatPref=Aisle&seatType=Coach&.cgifields=roundtri"
+"p&.cgifields=seatType&.cgifields=seatPref&findFlights.x=38&findFlights.y=6"
