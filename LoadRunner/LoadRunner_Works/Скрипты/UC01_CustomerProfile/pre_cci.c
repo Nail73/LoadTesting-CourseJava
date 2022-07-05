@@ -2631,10 +2631,6 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		"LAST");
 		
-	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
-	
-	lr_save_string(lr_eval_string("{Password}"),"Pass");
-	
 	web_add_header("DNT", 
 		"1");
 
@@ -2732,7 +2728,7 @@ Action()
 
 	lr_start_transaction("regProfile");
 	
-	 
+	web_reg_find("Text/IC=Thank you, <b>{Username}{RandomLetter}</b>, for registering and welcome to the Web Tours family.","LAST");
 
 
 		web_submit_data("login.pl", 
@@ -2744,9 +2740,9 @@ Action()
 		"Snapshot=t3.inf", 
 		"Mode=HTML", 
 		"ITEMDATA", 
-		"Name=username", "Value={Login}", "ENDITEM", 
-		"Name=password", "Value={Pass}", "ENDITEM", 
-		"Name=passwordConfirm", "Value={Pass}", "ENDITEM", 
+		"Name=username", "Value={Username}{RandomLetter}", "ENDITEM", 
+		"Name=password", "Value={Password}", "ENDITEM", 
+		"Name=passwordConfirm", "Value={Password}", "ENDITEM", 
 		"Name=firstName", "Value={FirstName}", "ENDITEM", 
 		"Name=lastName", "Value={LastName}", "ENDITEM", 
 		"Name=address1", "Value={StreetAddress}", "ENDITEM", 
@@ -2761,7 +2757,7 @@ Action()
 
 	lr_start_transaction("saveProfile");
 	
-	web_reg_find("Text/IC=Welcome, <b>{Login}</b>, to the Web Tours reservation pages.","LAST");
+	web_reg_find("Text/IC=Welcome, <b>{Username}{RandomLetter}</b>, to the Web Tours reservation pages.","LAST");
 
 		web_url("button_next.gif", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 

@@ -13,7 +13,7 @@ Action()
 
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=Flights List",LAST);
+	web_reg_find("Text=Itinerary",LAST);
 		
     web_url("welcome.pl", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
@@ -43,7 +43,7 @@ Action()
 	
 	lr_start_transaction("deleteTicket");
 
-    	lr_param_sprintf("c_buffer", "%s=on&", lr_eval_string("{c_flightids_count}"));
+    	lr_param_sprintf("c_buffer", "%s=on&", lr_eval_string("{RanDel}"));
     	
     	for (i=1;i<=atoi(lr_eval_string("{c_flightids_count}"));i++) {
     	

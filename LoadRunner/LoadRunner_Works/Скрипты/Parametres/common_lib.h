@@ -43,10 +43,6 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		LAST);
 		
-	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
-	
-	lr_save_string(lr_eval_string("{Password}"),"Pass");
-	
 	web_add_header("DNT", 
 		"1");
 
