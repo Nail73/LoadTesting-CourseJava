@@ -1,4 +1,0 @@
-"firstName=Petr&lastName=Glebov&address1=Stepnaya&address2=Riga&pass1=Petr++Glebov&pass2=&pass3"
-"=&creditCard=563816268&expDate=9168&oldCCOption=&numPassengers=1&seatType=Aisle&seatPref=First"
-"&outboundFlight=140%3B241%3B07%2F05%2F2022&advanceDiscount=0&returnFlight=&JSFormSubmit=off&.c"
-"gifields=saveCC&buyFlights.x=57&buyFlights.y=11"
