@@ -2751,9 +2751,6 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		"LAST");
 		
-	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
-	
-	lr_save_string(lr_eval_string("{Password}"),"Pass");
 	
 	web_add_header("DNT", 
 		"1");
@@ -2919,10 +2916,14 @@ Action()
 		"LAST");
 		
      arrSize = lr_paramarr_len("outFlightVal");
+     
      FlightVal = lr_paramarr_random("outFlightVal");
+     
      lr_save_string(FlightVal, "FlightVal");
      
  	lr_end_transaction("searchTicket",2);
+ 	
+ 	lr_think_time(5);
 	
 	lr_start_transaction("departureTime");
 	
@@ -2985,6 +2986,8 @@ Action()
 		"Name=buyFlights.y", "Value=11", "ENDITEM",
 		"LAST");
 		lr_end_transaction("paymentDetails",2);
+		
+		lr_think_time(5);
 	
 	lr_start_transaction("clickItinerary");
 	

@@ -7,5 +7,5 @@ Accept-Language: ru-RU
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1656942734; MTUserInfo=firstName&Olya&address2&Kiev&username&olya84&hash&52&lastName&Pees%0A&address1&Staraya&creditCard&&expDate&%0A
+Cookie: MSO=SID&1657016682; MTUserInfo=firstName&Petr&address2&Moscow&username&petr565&hash&117&lastName&Glebov%0A&address1&Stepnaya&creditCard&&expDate&%0A
 

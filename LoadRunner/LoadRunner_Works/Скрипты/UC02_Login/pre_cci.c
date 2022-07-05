@@ -2630,9 +2630,6 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		"LAST");
 		
-	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
-	
-	lr_save_string(lr_eval_string("{Password}"),"Pass");
 	
 	web_add_header("DNT", 
 		"1");
@@ -2724,6 +2721,8 @@ Action()
 	lr_start_transaction("UC02_Login");
 
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 
@@ -2744,6 +2743,8 @@ Action()
 		"LAST");
 
 	lr_end_transaction("clickToFlights",2);
+	
+	lr_think_time(5);
 
 	logout();
 		

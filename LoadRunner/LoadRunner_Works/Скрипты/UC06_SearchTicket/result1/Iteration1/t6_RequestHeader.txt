@@ -8,6 +8,6 @@ Accept-Language: ru-RU
 Accept: */*
 Connection: Keep-Alive
 Host: localhost:1080
-Cookie: MSO=SID&1656942923; MTUserInfo=firstName&Lucifer&address2&Moscow&username&lucifer666&hash&118&lastName&Dennica%0A&address1&Pushkina&creditCard&&expDate&%0A
-Content-Length: 262
+Cookie: MSO=SID&1657019328; MTUserInfo=firstName&Kirill&address2&Value&username&kirill1d&hash&68&lastName&Mefodiev%0A&address1&Novaya&creditCard&&expDate&%0A
+Content-Length: 256
 

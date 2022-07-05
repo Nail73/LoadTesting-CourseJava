@@ -76,10 +76,14 @@ Action()
 		LAST);
 		
      arrSize = lr_paramarr_len("outFlightVal");
+     
      FlightVal = lr_paramarr_random("outFlightVal");
+     
      lr_save_string(FlightVal, "FlightVal");
      
  	lr_end_transaction("searchTicket",LR_AUTO);
+ 	
+ 	lr_think_time(5);
 	
 	lr_start_transaction("departureTime");
 	
@@ -142,6 +146,8 @@ Action()
 		"Name=buyFlights.y", "Value=11", ENDITEM,
 		LAST);
 		lr_end_transaction("paymentDetails",LR_AUTO);
+		
+		lr_think_time(5);
 	
 	lr_start_transaction("clickItinerary");
 	

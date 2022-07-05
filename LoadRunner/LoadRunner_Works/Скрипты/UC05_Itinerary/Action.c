@@ -4,6 +4,8 @@ Action()
 	lr_start_transaction("UC05_Itinerary");
 	
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 	
@@ -22,7 +24,6 @@ Action()
 		"Snapshot=t4.inf", 
 		"Mode=HTML", 
 		LAST);
-
 
 	lr_end_transaction("clickItinerary",LR_AUTO);
 	

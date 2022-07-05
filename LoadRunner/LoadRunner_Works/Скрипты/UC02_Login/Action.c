@@ -3,6 +3,8 @@ Action()
 	lr_start_transaction("UC02_Login");
 
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 
@@ -23,6 +25,8 @@ Action()
 		LAST);
 
 	lr_end_transaction("clickToFlights",LR_AUTO);
+	
+	lr_think_time(5);
 
 	logout();
 		

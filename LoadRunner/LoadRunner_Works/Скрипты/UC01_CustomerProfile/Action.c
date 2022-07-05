@@ -4,16 +4,18 @@ Action()
 	lr_start_transaction("UC01_CustomerProfile");
 	
 	homePage();
+	
+	lr_think_time(5);
 
 	clickToRegProfile();
 
 	lr_think_time(5);
 
 	lr_start_transaction("regProfile");
+
+	web_reg_find("Text/IC=Thank you, <b>{Username}{RandomLetter}</b>, for registering and welcome to the Web Tours family.",
+		LAST);
 	
-	web_reg_find("Text/IC=Thank you, <b>{Username}{RandomLetter}</b>, for registering and welcome to the Web Tours family.",LAST);
-
-
 		web_submit_data("login.pl", 
 		"Action=http://localhost:1080/cgi-bin/login.pl", 
 		"Method=POST", 
@@ -40,7 +42,8 @@ Action()
 
 	lr_start_transaction("saveProfile");
 	
-	web_reg_find("Text/IC=Welcome, <b>{Username}{RandomLetter}</b>, to the Web Tours reservation pages.",LAST);
+	web_reg_find("Text/IC=Welcome, <b>{Username}{RandomLetter}</b>, to the Web Tours reservation pages.",
+		LAST);
 
 		web_url("button_next.gif", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=menus", 

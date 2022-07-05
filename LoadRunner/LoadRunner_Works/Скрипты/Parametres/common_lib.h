@@ -43,6 +43,7 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		LAST);
 		
+	
 	web_add_header("DNT", 
 		"1");
 

@@ -2,9 +2,12 @@ Action()
 { 
 	int arrSize;
     char * FlightVal;
+    
 	lr_start_transaction("UC06_SearchTicket");
 	
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 
@@ -26,7 +29,7 @@ Action()
 
 	lr_end_transaction("clickToFlights",LR_AUTO);
 
-	lr_think_time(28);
+	lr_think_time(5);
 
 	lr_start_transaction("searchTicket");
 	
@@ -71,10 +74,14 @@ Action()
 		LAST);
 		
      arrSize = lr_paramarr_len("outFlightVal");
+     
      FlightVal = lr_paramarr_random("outFlightVal");
+     
      lr_save_string(FlightVal, "FlightVal");
      
  	lr_end_transaction("searchTicket",LR_AUTO);
+ 	
+ 	lr_think_time(5);
 	
 	lr_start_transaction("departureTime");
 	
@@ -99,11 +106,7 @@ Action()
 		LAST);
 	
 	lr_end_transaction("departureTime",LR_AUTO);
-	
-	lr_think_time(5);
-
-	logout();
-		
+			
 	lr_end_transaction("UC06_SearchTicket",LR_AUTO);
 
 	return 0;

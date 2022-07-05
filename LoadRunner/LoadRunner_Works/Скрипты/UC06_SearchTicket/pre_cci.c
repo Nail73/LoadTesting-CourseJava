@@ -2630,9 +2630,6 @@ clickToRegProfile()
 	web_reg_find("Text=First time registering?",
 		"LAST");
 		
-	lr_save_string(lr_eval_string("{Username}{RandomLetter}"),"Login");
-	
-	lr_save_string(lr_eval_string("{Password}"),"Pass");
 	
 	web_add_header("DNT", 
 		"1");
@@ -2721,9 +2718,12 @@ Action()
 { 
 	int arrSize;
     char * FlightVal;
+    
 	lr_start_transaction("UC06_SearchTicket");
 	
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 
@@ -2745,7 +2745,7 @@ Action()
 
 	lr_end_transaction("clickToFlights",2);
 
-	lr_think_time(28);
+	lr_think_time(5);
 
 	lr_start_transaction("searchTicket");
 	
@@ -2790,10 +2790,14 @@ Action()
 		"LAST");
 		
      arrSize = lr_paramarr_len("outFlightVal");
+     
      FlightVal = lr_paramarr_random("outFlightVal");
+     
      lr_save_string(FlightVal, "FlightVal");
      
  	lr_end_transaction("searchTicket",2);
+ 	
+ 	lr_think_time(5);
 	
 	lr_start_transaction("departureTime");
 	
@@ -2818,11 +2822,7 @@ Action()
 		"LAST");
 	
 	lr_end_transaction("departureTime",2);
-	
-	lr_think_time(5);
-
-	logout();
-		
+			
 	lr_end_transaction("UC06_SearchTicket",2);
 
 	return 0;

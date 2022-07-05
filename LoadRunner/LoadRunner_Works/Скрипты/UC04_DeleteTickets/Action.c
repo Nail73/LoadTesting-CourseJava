@@ -6,6 +6,8 @@ Action()
 	lr_start_transaction("UC04_DeleteTickets");
 	
 	homePage();
+	
+	lr_think_time(5);
 
 	login();
 	
@@ -15,7 +17,7 @@ Action()
 	
 	web_reg_find("Text=Itinerary",LAST);
 		
-    web_url("welcome.pl", 
+    web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=", 
 		"Resource=0", 
@@ -25,17 +27,21 @@ Action()
 		"Mode=HTML", 
 		LAST);
 		
-	   	web_reg_save_param("c_flightids",
-    	"lb=<input type=\"hidden\" name=\"flightID\" value=\"",
-    	"rb=\"  />",
-    	"ord=all",
-    	LAST);
-
-    	web_reg_save_param("c_cgifields",
-    	"lb=<input type=\"hidden\" name=\".cgifields\" value=\"",
-    	"rb=\"  />",
-    	"ord=all",
-    	LAST);
+	web_reg_save_param_ex(
+		"ParamName=c_flightids",
+		"LB=<input type=\"hidden\" name=\"flightID\" value=\"",
+		"RB=\"  />",
+		"Ordinal=ALL",
+		SEARCH_FILTERS,
+		LAST);
+    	
+    	web_reg_save_param_ex(
+		"ParamName=c_cgifields",
+		"LB=<input type=\"hidden\" name=\".cgifields\" value=\"",
+		"RB=\"  />",
+		"Ordinal=ALL",
+		SEARCH_FILTERS,
+		LAST);
 	
 	lr_end_transaction("clickItinerary",LR_AUTO);
 
@@ -43,7 +49,7 @@ Action()
 	
 	lr_start_transaction("deleteTicket");
 
-    	lr_param_sprintf("c_buffer", "%s=on&", lr_eval_string("{RanDel}"));
+    	lr_param_sprintf("c_buffer", "%s=on&", lr_eval_string("{c_flightids_count}"));
     	
     	for (i=1;i<=atoi(lr_eval_string("{c_flightids_count}"));i++) {
     	
@@ -65,7 +71,7 @@ Action()
 		"RecContentType=text/html", 
 		"Referer=http://localhost:1080/cgi-bin/nav.pl?page=menu&in=home", 
 		"Snapshot=t4.inf", 
-		"Mode=HTML", 
+		"Mode=HTML",	
 		LAST);
 
 	lr_end_transaction("deleteTicket",LR_AUTO);
