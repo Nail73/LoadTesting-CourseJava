@@ -2721,24 +2721,12 @@ Action()
 	
 	homePage();
 	
-	lr_think_time(5);
-
 	login();
 	
-	lr_think_time(5);
-
 	lr_start_transaction("clickItinerary");
 	
-	web_reg_find("Text=No flights have been reserved.",
-                 "SaveCount=not_flights",
-                 "LAST");
-	
-	if (atoi(lr_eval_string("{not_flights}")) > 0) {
-		web_reg_find("Text=No flights have been reserved.","LAST");
-	} else {
-		web_reg_find("Text=Flights List","LAST");
-	}
-		
+	web_reg_find("Text=Flights List","LAST");
+			
     web_url("Itinerary Button", 
 		"URL=http://localhost:1080/cgi-bin/welcome.pl?page=itinerary", 
 		"TargetFrame=", 
@@ -2750,7 +2738,7 @@ Action()
 		"LAST");
 
 	lr_end_transaction("clickItinerary",2);
-	
+		
 	lr_end_transaction("UC05_Itinerary",2);
 
 	return 0;

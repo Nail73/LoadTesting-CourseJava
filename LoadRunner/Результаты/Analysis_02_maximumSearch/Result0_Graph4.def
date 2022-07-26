@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T155979553T
+TableName=T410600601T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -76,7 +76,7 @@ BreakdownTree=0
 TransactionBreakdownGraph=1
 
 [SelectString0]
-Dimension=!([Value]-[Think Time])!
+Dimension=Transaction Response Time
 CountField=![Acount]!
 AggregateFunction=Avg
 ResultSetAggregateFunction=Y Value
@@ -113,12 +113,12 @@ DimeFuncType0=FuncFragment
 FunctionName_UI0=Think Time
 DimensionName_UI0=Transaction Response Time,Aminimum,Amaximum
 FunctionFragmentValues_UI0=-Include Think Time
-DimensionFragmentValues_UI0=!([Value]-[Think Time])!
+DimensionFragmentValues_UI0=
 
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=128
+Granularity=1
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 

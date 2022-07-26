@@ -1,5 +1,5 @@
 ﻿[BasicInfo]
-Title=Total Transactions per Second - Running Vusers
+Title=Processor Time - Running Vusers
 TemplateName=
 ChartType=Overlay
 Description=
@@ -42,7 +42,7 @@ Pen_Color=0
 SmartCorrBool=0
 
 [Legend]
-NumColumns=9
+NumColumns=11
 Column0Name=Color
 Column0Type=Color
 Column0Width=38
@@ -70,6 +70,12 @@ Column7Width=80
 Column8Name=Graph's Std. Deviation
 Column8Type=Std
 Column8Width=80
+Column9Name=Machine Name
+Column9Type=Machine Name
+Column9Width=80
+Column10Name=Monitor Type
+Column10Type=Monitor Type
+Column10Width=80
 
 [ChartDisplayOptions]
 DisplayType=Line

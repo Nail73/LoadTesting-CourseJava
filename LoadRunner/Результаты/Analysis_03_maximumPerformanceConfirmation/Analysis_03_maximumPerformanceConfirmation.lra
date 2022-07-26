@@ -6,7 +6,7 @@ IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=res1164507506DB
+DataBaseName=res6409049669DB
 DBType=1
 CurrServer=GULNARA
 CurrUser=sa
@@ -38,13 +38,13 @@ FEndTime=0
 
 [Result0]
 LRRID=
-ResultPath=c:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Сценарии\res13\res13.lrr
+ResultPath=c:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Сценарии\res6\res6.lrr
 ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-14400
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1658165141
-ScenarioEndTime=1658168953
+ScenarioStartTime=1658834913
+ScenarioEndTime=1658838725
 ResInSD=0
 WebGran=0
 FilterEdge=0
@@ -59,7 +59,7 @@ Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize each Vuser just before it runs
 Scenario Duration=Start 10 Vusers: 1 every 00:00:05 (HH:MM:SS); Run for 01:02:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:05 (HH:MM:SS)
-NumGraphs=18
+NumGraphs=16
 
 [DimensionFunctions]
 DimeFuncCount=0

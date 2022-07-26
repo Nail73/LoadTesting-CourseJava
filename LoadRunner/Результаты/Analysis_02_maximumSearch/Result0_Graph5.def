@@ -1,9 +1,9 @@
 ﻿[BasicInfo]
-Title=Total Transactions per Second
-TemplateName=TotalTransactionsPass
+Title=Transactions per Second
+TemplateName=TransactionsPerSecond
 ChartType=Simple
-Description=Displays the total number of completed transactions (both successful and unsuccessful) performed during each second of a load test. This graph helps you determine the actual transaction load on your system at any given moment.
-HelpContext=537
+Description=Displays the number of completed transactions (both successful and unsuccessful) performed during each second of a load test. This graph helps you determine the actual transaction load on your system at any given moment.
+HelpContext=505
 EventType=Transaction
 EventName=
 ChartGroup=Transactions
@@ -12,7 +12,7 @@ CustomData=
 
 [TabSheet]
 Visible=1
-ActivePage=0
+ActivePage=1
 
 [MultiUIInfos]
 Count=1
@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T156298302T
+TableName=T410610460T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -58,10 +58,10 @@ NumBasicFilters=1
 NumAdditionalFilters=0
 NumRawDataFilters=0
 HiddenDimensions=
-BasicGroupBy=Transaction End Status
-AdditionalGroupBy=
+BasicGroupBy=Transaction Name
+AdditionalGroupBy=Transaction End Status
 HasGranularity=1
-YLeftAxisTitle=Total Number of Transactions
+YLeftAxisTitle=Number of Transactions
 YRightAxisTitle=
 TimeBasedXAxis=1
 XBottomAxisTitle=Elapsed scenario time hh:mm
@@ -106,7 +106,7 @@ DimensionFragmentValues_UI0=
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=128
+Granularity=1
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 

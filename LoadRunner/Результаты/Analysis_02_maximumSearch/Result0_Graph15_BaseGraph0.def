@@ -1,16 +1,16 @@
 ﻿[BasicInfo]
-Title=Copy of Average Transaction Response Time
-TemplateName=ResponseTime
-ChartGroup=Transactions
-PerformanceClass=General
+Title=Copy of Hits per Second
+TemplateName=HitsperSecond
+ChartGroup=Web Server Resources
+PerformanceClass=Network
 
 [Graph Definitions]
-MainFactTableName=Event_meter
+MainFactTableName=WebEvent_meter
 DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T156459670T
+TableName=T400820411T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -18,20 +18,20 @@ SetPieToPercent=0
 DescFromFID=0
 NumSelectStrings=1
 ProduceRealStatis=1
-CompleteMissingValuesWithZeroes=0
+CompleteMissingValuesWithZeroes=1
 CompleteMissingValues=0
 ForceCompleteValsOnArea=1
 IdsToStrs=1
 StdMonitor=0
 HiddenFunctions=
-NumBasicFilters=1
-NumAdditionalFilters=1
+NumBasicFilters=2
+NumAdditionalFilters=0
 NumRawDataFilters=0
 HiddenDimensions=
-BasicGroupBy=Transaction Name
+BasicGroupBy=
 AdditionalGroupBy=
 HasGranularity=1
-YLeftAxisTitle=Average Response Time (seconds)
+YLeftAxisTitle=Hits per Second
 YRightAxisTitle=
 TimeBasedXAxis=1
 XBottomAxisTitle=Elapsed scenario time hh:mm
@@ -43,14 +43,14 @@ ZeroValue=0
 CompleteValFromLast=0
 Stacked=0
 BreakdownTree=0
-TransactionBreakdownGraph=1
+TransactionBreakdownGraph=0
 
 [SelectString0]
-Dimension=!([Value]-[Think Time])!
+Dimension=![Value]!
 CountField=![Acount]!
-AggregateFunction=Avg
+AggregateFunction=SumG
 ResultSetAggregateFunction=Y Value
-Title=Response_Time
+Title=Hits
 ActiveState=1
 
 [BasicFilter0]
@@ -62,35 +62,35 @@ DimensionTableName=Event_Map
 NumValues=1
 UseEscapeSequence=1
 DimCount=1
-Dim_0=Transaction
+Dim_0=Web
 LikeMode=0
 
-[AdditionalFilter0]
+[BasicFilter1]
 DimensionType=Discrete
 InternalDimName=
-Dimension=Transaction End Status
-EqualFlag=1
-DimensionTableName=TransactionEndStatus
-NumValues=1
+Dimension=Event Name
+EqualFlag=0
+DimensionTableName=Event_Map
+NumValues=3
 UseEscapeSequence=1
-DimCount=1
-Dim_0=Pass
+DimCount=3
+Dim_0=Throughput
+Dim_1=JMeter Sent
+Dim_2=JMeter Received
 LikeMode=0
 
+[Filter Data]
+SingleValue=Hits
+
 [DimensionFunctions]
-DimeFuncCount=1
-DimeFuncType0=FuncFragment
-FunctionName_UI0=Think Time
-DimensionName_UI0=Transaction Response Time,Aminimum,Amaximum
-FunctionFragmentValues_UI0=-Include Think Time
-DimensionFragmentValues_UI0=!([Value]-[Think Time])!
+DimeFuncCount=0
 
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
 Granularity=128
-BaseGranularityUIName=
-MinimumDefaultGranularity=1
+BaseGranularityUIName=Hits
+MinimumDefaultGranularity=5
 
 [Alerts]
 Number Of Alerts=0

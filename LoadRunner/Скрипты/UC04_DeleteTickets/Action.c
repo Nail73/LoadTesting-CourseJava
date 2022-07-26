@@ -1,6 +1,7 @@
 Action()
 {
 	int i;
+	int randNum;
 	
 	lr_start_transaction("UC04_DeleteTickets");
 	
@@ -53,30 +54,21 @@ Action()
 	
 	lr_end_transaction("clickItinerary",LR_AUTO);
 	
+	randNum = rand()%atoi(lr_eval_string("{c_flightids_count}")) + 1;
+	
+	lr_save_int(randNum, "randNum");
+	
+	lr_save_string(lr_paramarr_idx("c_flightids", randNum), "cancel_ticket_id");
+	
 	lr_start_transaction("deleteTicket");
 
-   lr_param_sprintf("c_buffer", "%s=on&", lr_eval_string("{c_flightids_count}"));
-    	
-   lr_save_string(lr_eval_string("{c_buffer}removeFlights.x=39&removeFlights.y=11"), "c_wcr");
-
-    lr_save_string(lr_eval_string(lr_eval_string("{c_flightids_{c_flightids_count}}")), "c_cancelflight");
-
-    web_reg_find("Text={c_cancelflight}", "Fail=Found", LAST);
-
-      	
-    	web_submit_data("itinerary.pl", 
-		"Action=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Method=POST", 
-		"TargetFrame=", 
-		"RecContentType=text/html", 
-		"Referer=http://localhost:1080/cgi-bin/itinerary.pl", 
-		"Snapshot=t4.inf", 
-		"Mode=HTML", 
+      	web_reg_find("Text={cancel_ticket_id}", "Fail=Found", LAST);
+    	web_submit_form("itinerary.pl", 
+		"Snapshot=t13.inf", 
 		ITEMDATA, 
-		"Name=flightID", "Value={c_cancelflight}", ENDITEM, 
-		"Name=.cgifields", "Value={c_cancelflight}", ENDITEM, 
-		"Name=removeFlights.x", "Value=39", ENDITEM, 
-		"Name=removeFlights.y", "Value=11", ENDITEM, 
+		"Name={randNum}", "Value=on", ENDITEM, 
+		"Name=removeFlights.x", "Value=40", ENDITEM, 
+		"Name=removeFlights.y", "Value=13", ENDITEM, 
 		LAST);
     
     

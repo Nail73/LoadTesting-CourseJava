@@ -1,5 +1,5 @@
 ﻿[BasicInfo]
-Title=Average Transaction Response Time - Running Vusers
+Title=Hits per Second - Running Vusers
 TemplateName=
 ChartType=Overlay
 Description=
@@ -18,60 +18,6 @@ ActivePage=0
 Count=2
 
 [UIInfo0]
-Title0=Action_Transaction
-Color0=8559404
-Active0=0
-Scale0=1
-ScaleState0=User
-UITitle0=
-Title1=UC01_CustomerProfile
-Color1=12102544
-Active1=0
-Scale1=1
-ScaleState1=User
-UITitle1=
-Title2=UC02_Login
-Color2=3070145
-Active2=0
-Scale2=1
-ScaleState2=User
-UITitle2=
-Title3=UC03_BuyTickets
-Color3=7887631
-Active3=0
-Scale3=1
-ScaleState3=User
-UITitle3=
-Title4=UC04_DeleteTickets
-Color4=8747520
-Active4=0
-Scale4=1
-ScaleState4=User
-UITitle4=
-Title5=UC05_Itinerary
-Color5=9527892
-Active5=0
-Scale5=1
-ScaleState5=User
-UITitle5=
-Title6=UC06_SearchTicket
-Color6=13677637
-Active6=0
-Scale6=1
-ScaleState6=User
-UITitle6=
-Title7=vuser_end_Transaction
-Color7=10509970
-Active7=0
-Scale7=1
-ScaleState7=User
-UITitle7=
-Title8=vuser_init_Transaction
-Color8=6595986
-Active8=0
-Scale8=1
-ScaleState8=User
-UITitle8=
 
 [UIInfo1]
 
