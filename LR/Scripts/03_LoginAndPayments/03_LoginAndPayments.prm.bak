@@ -1,0 +1,9 @@
+[parameter:accountNumber]
+Format="%Y%m%d%H%M"
+GenerateNewVal="EachIteration"
+Offset=""
+OffsetUI="0"
+OriginalValue=""
+ParamName="accountNumber"
+Type="Time"
+WorkingDaysOn="0"
