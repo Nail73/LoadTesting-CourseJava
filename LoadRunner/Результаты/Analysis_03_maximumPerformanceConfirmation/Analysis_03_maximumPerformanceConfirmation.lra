@@ -1,12 +1,12 @@
 ﻿[Workspace]
 SessionStartTime=0
-SessionEndTime=3812
+SessionEndTime=4215
 VerNo=13
 IsSummaryData=0
 TimeFormat=0
 SesLang=RUS
 ABuild=0
-DataBaseName=res6409049669DB
+DataBaseName=res3503329834DB
 DBType=1
 CurrServer=GULNARA
 CurrUser=sa
@@ -38,13 +38,13 @@ FEndTime=0
 
 [Result0]
 LRRID=
-ResultPath=c:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Сценарии\res6\res6.lrr
+ResultPath=c:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Сценарии\res3\res3.lrr
 ResultTDPath=
 NumFilters=0
 ScenarioTimeZone=-14400
 DaylightSavingSecsAddition=0
-ScenarioStartTime=1658834913
-ScenarioEndTime=1658838725
+ScenarioStartTime=1659366149
+ScenarioEndTime=1659370364
 ResInSD=0
 WebGran=0
 FilterEdge=0
@@ -58,9 +58,14 @@ Scenario Type=Manual
 Schedule Name=Schedule 1
 Mode=Scenario Scheduling
 Load Behavior=Initialize each Vuser just before it runs
-Scenario Duration=Start 10 Vusers: 1 every 00:00:05 (HH:MM:SS); Run for 01:02:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:05 (HH:MM:SS)
-NumGraphs=16
+Scenario Duration=Start 50 Vusers: 1 every 00:00:05 (HH:MM:SS); Run for 01:02:00 (HH:MM:SS); Stop all Vusers: 1 every 00:00:05 (HH:MM:SS)
+NumGraphs=18
 
 [DimensionFunctions]
-DimeFuncCount=0
+DimeFuncCount=1
+DimeFuncType0=FuncFragment
+FunctionName_UI0=Think Time
+DimensionName_UI0=Transaction Response Time,Aminimum,Amaximum
+FunctionFragmentValues_UI0=-Include Think Time
+DimensionFragmentValues_UI0=!([Value]-[Think Time])!
 

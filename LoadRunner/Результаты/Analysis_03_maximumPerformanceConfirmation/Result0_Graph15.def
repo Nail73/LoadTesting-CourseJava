@@ -1,5 +1,5 @@
 ﻿[BasicInfo]
-Title=Transactions per Second - Running Vusers
+Title=Average Transaction Response Time - Running Vusers
 TemplateName=
 ChartType=Overlay
 Description=
@@ -31,7 +31,7 @@ ActionClearFilterEnabled=0
 ChartFile=C:\Users\Гульнара\Desktop\LoadRunner\LoadRunner_Works\Результаты\Analysis_03_maximumPerformanceConfirmation\Result0_Graph15.cfg
 View3D=0
 IntLegendVisible=0
-Chart3dPercent=1
+Chart3dPercent=10
 Pen_Style=0
 Pen_SmallDots=0
 Pen_Visible=1

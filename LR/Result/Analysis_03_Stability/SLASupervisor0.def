@@ -28,8 +28,8 @@ EqualFlag=1
 DimensionTableName=Event_meter
 NumValues=1
 DimCount=2
-Dim_0=60.000000
-Dim_1=5460.000000
+Dim_0=300.000000
+Dim_1=5700.000000
 
 [DimensionFunctions]
 DimeFuncCount=1

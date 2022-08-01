@@ -1,5 +1,5 @@
 ﻿[BasicInfo]
-Title=Committed Bytes
+Title=File Data Operations
 TemplateName=WindowsResources
 ChartType=Simple
 Description=Displays a summary of the System Resources usage for each Windows based host.
@@ -40,7 +40,7 @@ DefaultDisplayType=Line
 UserGranularity=1
 RoundBarValues=0
 GraphDataCol1=
-TableName=T411968922T
+TableName=T505797363T
 BasicTableName=
 AbsoluteTime=0
 DisableFilter=0
@@ -104,7 +104,7 @@ DimensionTableName=Event_map
 NumValues=1
 UseEscapeSequence=1
 DimCount=1
-Dim_0=Committed Bytes (Memory)
+Dim_0=File Data Operations/sec (System)
 LikeMode=0
 
 [DimensionFunctions]
@@ -113,7 +113,7 @@ DimeFuncCount=0
 [Granularity]
 Dimension=Scenario Elapsed Time
 TimeScaleType=2
-Granularity=1
+Granularity=128
 BaseGranularityUIName=
 MinimumDefaultGranularity=1
 
