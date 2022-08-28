@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="phantomjs-2.1.1-windows">
-    <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/phantomjs-2.1.1-windows.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
